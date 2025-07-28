@@ -22,14 +22,14 @@ const Footer = () => {
 
   const contact = [
     { icon: Phone, text: '+91 161 234 5678', href: 'tel:+91161234567' },
-    { icon: Mail, text: 'info@ludhianainternationalairport.com', href: 'mailto:info@ludhianainternationalairport.com' },
+    { icon: Mail, text: 'info@ludhianaairport.com', href: 'mailto:info@ludhianaairport.com' },
     { icon: MapPin, text: 'Halwara, Ludhiana, Punjab, India', href: '#' }
   ];
 
   const socialLinks = [
-    { icon: Facebook, href: '#', label: 'Facebook' },
+    { icon: Facebook, href: 'https://www.facebook.com/HalwaraAirport', label: 'Facebook' },
     { icon: Twitter, href: '#', label: 'Twitter' },
-    { icon: Instagram, href: '#', label: 'Instagram' },
+    { icon: Instagram, href: 'https://www.instagram.com/ludhianaairport/', label: 'Instagram' },
     { icon: Linkedin, href: '#', label: 'LinkedIn' }
   ];
 
