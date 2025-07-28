@@ -1,1 +1,1 @@
-Ludhiana International Airport-Halwara
+Ludhiana International Airport
