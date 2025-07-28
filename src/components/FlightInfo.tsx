@@ -34,12 +34,43 @@ const FlightInfo = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Flight Information</h2>
+          <div className="inline-block bg-red-100 text-red-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+            Coming Soon - Not Live Status
+          </div>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Stay updated with real-time flight schedules and gate information
           </p>
         </div>
 
-        <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
+        <div className="bg-white rounded-2xl shadow-xl overflow-hidden relative">
+          {/* Diagonal strike-through overlay */}
+          <div className="absolute inset-0 z-10 pointer-events-none">
+            <div className="relative w-full h-full">
+              <div className="absolute top-0 left-0 w-full h-full">
+                <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                  <line 
+                    x1="0" 
+                    y1="0" 
+                    x2="100" 
+                    y2="100" 
+                    stroke="#dc2626" 
+                    strokeWidth="0.5" 
+                    opacity="0.8"
+                  />
+                  <line 
+                    x1="0" 
+                    y1="100" 
+                    x2="100" 
+                    y2="0" 
+                    stroke="#dc2626" 
+                    strokeWidth="0.5" 
+                    opacity="0.8"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          
           <div className="bg-gradient-to-r from-blue-600 to-blue-700 p-6">
             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
               <div className="flex space-x-1 bg-white/10 rounded-lg p-1">
@@ -77,7 +108,10 @@ const FlightInfo = () => {
             </div>
           </div>
 
-          <div className="p-6">
+          <div className="p-6 relative">
+            <div className="absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-xs font-bold opacity-90 z-20">
+              DEMO DATA
+            </div>
             <div className="overflow-x-auto">
               <table className="w-full">
                 <thead>
@@ -93,7 +127,7 @@ const FlightInfo = () => {
                 </thead>
                 <tbody>
                   {flights[activeTab as keyof typeof flights].map((flight) => (
-                    <tr key={flight.id} className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                    <tr key={flight.id} className="border-b border-gray-100 hover:bg-gray-50 transition-colors opacity-75">
                       <td className="py-4 px-4">
                         <div className="flex items-center space-x-3">
                           <div className="bg-blue-100 p-2 rounded-lg">
