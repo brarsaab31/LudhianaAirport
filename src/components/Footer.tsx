@@ -22,8 +22,8 @@ const Footer = () => {
 
   const contact = [
     { icon: Phone, text: '+91 161 234 5678', href: 'tel:+91161234567' },
-    { icon: Mail, text: 'info@ludhianaairport.com', href: 'mailto:info@ludhianaairport.com' },
-    { icon: MapPin, text: 'Ludhiana, Punjab, India', href: '#' }
+    { icon: Mail, text: 'info@ludhianahalwaraairport.com', href: 'mailto:info@ludhianahalwaraairport.com' },
+    { icon: MapPin, text: 'Halwara, Ludhiana, Punjab, India', href: '#' }
   ];
 
   const socialLinks = [
@@ -43,12 +43,12 @@ const Footer = () => {
                 <Plane className="h-8 w-8 text-white" />
               </div>
               <div>
-                <h3 className="text-2xl font-bold">Ludhiana Airport</h3>
+                <h3 className="text-2xl font-bold">Ludhiana International Airport-Halwara</h3>
                 <p className="text-gray-400">Coming Soon</p>
               </div>
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
-              Punjab's newest international gateway, connecting Ludhiana to the world with modern facilities and exceptional service.
+              Punjab's newest international gateway at Halwara, connecting Ludhiana to the world with modern facilities and exceptional service.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social, index) => (
@@ -126,7 +126,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-400 text-sm">
-              © 2025 Ludhiana Airport. All rights reserved.
+              © 2025 Ludhiana International Airport-Halwara. All rights reserved.
             </p>
             <div className="flex space-x-8 text-sm text-gray-400">
               <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
