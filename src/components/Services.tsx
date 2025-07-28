@@ -48,10 +48,10 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-white">
+    <section id="services" className="py-20 bg-white" aria-labelledby="services-heading">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Airport Services</h2>
+          <h2 id="services-heading" className="text-4xl font-bold text-gray-900 mb-4">Airport Services</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Comprehensive services designed to make your travel experience seamless and comfortable
           </p>

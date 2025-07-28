@@ -38,7 +38,7 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-2">
             <div className="bg-blue-600 p-2 rounded-lg">
-              <Plane className="h-6 w-6 text-white" />
+              <Plane className="h-6 w-6 text-white" aria-hidden="true" />
             </div>
             <div>
               <h1 className={`text-xl font-bold transition-colors ${
@@ -72,6 +72,7 @@ const Header = () => {
             className={`md:hidden p-2 rounded-lg transition-colors ${
               scrolled ? 'text-gray-700 hover:bg-gray-100' : 'text-white hover:bg-white/10'
             }`}
+            aria-label="Toggle navigation menu"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
