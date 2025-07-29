@@ -26,7 +26,7 @@ const Hero = () => {
         </h1>
         
         <p className="text-xl sm:text-2xl mb-8 text-blue-100 max-w-2xl mx-auto leading-relaxed">
-          Punjab's newest international gateway, connecting Ludhiana to the world with modern facilities and exceptional service.
+          Punjab's newest international gateway, connecting Ludhiana to the world with modern facilities and exceptional service. <p>"A helpful guide sharing info and updates about Halwara International Airport for everyone’s ease." </p>
         </p>
         
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12 max-w-3xl mx-auto">
