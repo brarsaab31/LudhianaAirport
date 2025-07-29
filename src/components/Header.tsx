@@ -31,9 +31,9 @@ const Header = () => {
   ];
 
   const socialLinks = [
-    { icon: Facebook, href: 'https://www.facebook.com/ludhianainternationalairport', label: 'Facebook' },
+    { icon: Facebook, href: 'https://www.facebook.com/halwaraairport', label: 'Facebook' },
     { icon: Twitter, href: 'https://www.twitter.com/ludhianaairport', label: 'Twitter' },
-    { icon: Instagram, href: 'https://www.instagram.com/ludhianainternationalairport', label: 'Instagram' },
+    { icon: Instagram, href: 'https://www.instagram.com/ludhianaairport', label: 'Instagram' },
     { icon: Linkedin, href: 'https://www.linkedin.com/company/ludhianainternationalairport', label: 'LinkedIn' }
   ];
 
