@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Plane } from 'lucide-react';
+import { Menu, X, Plane, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,6 +30,13 @@ const Header = () => {
     { id: 'pickup', label: 'Pick-up' },
   ];
 
+  const socialLinks = [
+    { icon: Facebook, href: 'https://www.facebook.com/ludhianainternationalairport', label: 'Facebook' },
+    { icon: Twitter, href: 'https://www.twitter.com/ludhianaairport', label: 'Twitter' },
+    { icon: Instagram, href: 'https://www.instagram.com/ludhianainternationalairport', label: 'Instagram' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/company/ludhianainternationalairport', label: 'LinkedIn' }
+  ];
+
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       scrolled ? 'bg-white/95 backdrop-blur-md shadow-md' : 'bg-transparent'
@@ -46,11 +53,29 @@ const Header = () => {
               }`}>
                 Ludhiana International Airport
               </h1>
-              <p className={`text-sm transition-colors ${
-                scrolled ? 'text-gray-600' : 'text-blue-100'
-              }`}>
-                Coming Soon
-              </p>
+              <div className="flex items-center space-x-3">
+                <p className={`text-sm transition-colors ${
+                  scrolled ? 'text-gray-600' : 'text-blue-100'
+                }`}>
+                  Coming Soon
+                </p>
+                <div className="flex space-x-2">
+                  {socialLinks.map((social, index) => (
+                    <a
+                      key={index}
+                      href={social.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`transition-colors hover:scale-110 transform duration-200 ${
+                        scrolled ? 'text-gray-600 hover:text-blue-600' : 'text-blue-100 hover:text-white'
+                      }`}
+                      aria-label={social.label}
+                    >
+                      <social.icon className="h-4 w-4" />
+                    </a>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
 
@@ -90,6 +115,24 @@ const Header = () => {
                 {item.label}
               </button>
             ))}
+            
+            <div className="px-4 py-2 border-t border-gray-200 mt-2">
+              <p className="text-sm text-gray-600 mb-2">Follow us:</p>
+              <div className="flex space-x-3">
+                {socialLinks.map((social, index) => (
+                  <a
+                    key={index}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-600 hover:text-blue-600 transition-colors"
+                    aria-label={social.label}
+                  >
+                    <social.icon className="h-5 w-5" />
+                  </a>
+                ))}
+              </div>
+            </div>
           </div>
         )}
       </div>
