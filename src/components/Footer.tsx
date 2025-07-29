@@ -43,7 +43,7 @@ const Footer = () => {
                 <Plane className="h-8 w-8 text-white" aria-hidden="true" />
               </div>
               <div>
-                <h3 className="text-2xl font-bold">Ludhiana International Airport</h3>
+                <h3 className="text-2xl font-bold">Halwara International Airport</h3>
                 <p className="text-gray-400">Coming Soon</p>
               </div>
             </div>
@@ -126,7 +126,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-400 text-sm">
-              © 2025 Ludhiana International Airport. All rights reserved.
+              © 2025 Halwara International Airport. All rights reserved.
             </p>
             <div className="flex space-x-8 text-sm text-gray-400">
               <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>

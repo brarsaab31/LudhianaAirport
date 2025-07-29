@@ -51,7 +51,7 @@ const Header = () => {
               <h1 className={`text-xl font-bold transition-colors ${
                 scrolled ? 'text-gray-900' : 'text-white'
               }`}>
-                Ludhiana International Airport
+                Halwara International Airport
               </h1>
               <div className="flex items-center space-x-3">
                 <p className={`text-sm transition-colors ${
