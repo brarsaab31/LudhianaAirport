@@ -28,6 +28,7 @@ const Header = () => {
     { id: 'hotels', label: 'Hotels' },
     { id: 'parking', label: 'Parking' },
     { id: 'pickup', label: 'Pick-up' },
+    { id: 'contact', label: 'Contact' },
   ];
 
   const socialLinks = [

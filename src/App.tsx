@@ -6,6 +6,7 @@ import Services from './components/Services';
 import Hotels from './components/Hotels';
 import Parking from './components/Parking';
 import PickupServices from './components/PickupServices';
+import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Hotels />
       <Parking />
       <PickupServices />
+      <ContactForm />
       <Footer />
     </div>
   );
