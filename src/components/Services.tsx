@@ -79,7 +79,14 @@ const Services = () => {
               </div>
               
               <div className="px-8 pb-8">
-                <button className="w-full bg-gray-900 hover:bg-blue-600 text-white py-3 px-6 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105">
+                <button 
+                  onClick={() => {
+                    if (service.title === 'Taxi Services') {
+                      document.getElementById('taxi-services')?.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }}
+                  className="w-full bg-gray-900 hover:bg-blue-600 text-white py-3 px-6 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105"
+                >
                   Learn More
                 </button>
               </div>

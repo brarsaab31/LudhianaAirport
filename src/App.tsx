@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import FlightInfo from './components/FlightInfo';
 import Services from './components/Services';
+import TaxiServices from './components/TaxiServices';
 import Hotels from './components/Hotels';
 import Parking from './components/Parking';
 import PickupServices from './components/PickupServices';
@@ -16,6 +17,7 @@ function App() {
       <Hero />
       <FlightInfo />
       <Services />
+      <TaxiServices />
       <Hotels />
       <Parking />
       <PickupServices />
