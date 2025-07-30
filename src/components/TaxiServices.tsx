@@ -10,7 +10,7 @@ const TaxiServices = () => {
       description: 'Affordable and reliable transportation',
       vehicles: [
         {
-          name: 'Maruti Swift',
+          name: 'Swift Dzire',
           image: 'https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=800',
           capacity: '4 passengers',
           luggage: '2 bags',
@@ -40,7 +40,7 @@ const TaxiServices = () => {
           features: ['Leather Seats', 'WiFi', 'Bottled Water']
         },
         {
-          name: 'Toyota Camry',
+          name: 'Audi A4',
           image: 'https://images.pexels.com/photos/244206/pexels-photo-244206.jpeg?auto=compress&cs=tinysrgb&w=800',
           capacity: '4 passengers',
           luggage: '4 bags',
