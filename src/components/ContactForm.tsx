@@ -59,27 +59,6 @@ const ContactForm = () => {
     }, 1000);
   };
 
-  const contactInfo = [
-    {
-      icon: Phone,
-      title: 'Phone',
-      details: '+91 161 234 5678',
-      link: 'tel:+911612345678'
-    },
-    {
-      icon: Mail,
-      title: 'Email',
-      details: 'halwaraairport@gmail.com',
-      link: 'mailto:halwaraairport@gmail.com'
-    },
-    {
-      icon: MapPin,
-      title: 'Address',
-      details: 'Halwara, Ludhiana, Punjab, India',
-      link: '#'
-    }
-  ];
-
   const subjects = [
     'General Inquiry',
     'Flight Information',
@@ -93,7 +72,7 @@ const ContactForm = () => {
   if (showThankYou) {
     return (
       <section id="contact" className="py-20 bg-gradient-to-br from-blue-50 to-indigo-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="bg-white rounded-3xl shadow-xl p-12">
             <div className="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
               <CheckCircle className="h-10 w-10 text-green-600" />
@@ -116,28 +95,12 @@ const ContactForm = () => {
 
   return (
     <section id="contact" className="py-20 bg-gradient-to-br from-blue-50 to-indigo-50" aria-labelledby="contact-heading">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 id="contact-heading" className="text-4xl font-bold text-gray-900 mb-4">Contact Us</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Have questions or need assistance? We're here to help you with all your airport needs.
           </p>
-        </div>
-
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
-          {contactInfo.map((info, index) => (
-            <a
-              key={index}
-              href={info.link}
-              className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center group"
-            >
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-600 transition-colors duration-300">
-                <info.icon className="h-8 w-8 text-blue-600 group-hover:text-white transition-colors duration-300" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">{info.title}</h3>
-              <p className="text-gray-600">{info.details}</p>
-            </a>
-          ))}
         </div>
 
         <div className="bg-white rounded-3xl shadow-xl overflow-hidden">
