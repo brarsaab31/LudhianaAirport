@@ -53,10 +53,7 @@ const Footer = () => {
                 <p className="text-gray-400">Coming Soon</p>
               </div>
             </div>
-            <p className="text-gray-400 mb-6 leading-relaxed">
-              Punjab's newest international gateway, connecting Ludhiana to the world with modern facilities and exceptional service.
-            </p>
-            <div className="flex space-x-4">
+             <div className="flex space-x-4">
               {socialLinks.map((social, index) => (
                 <a
                   key={index}
