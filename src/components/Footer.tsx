@@ -127,7 +127,22 @@ const Footer = () => {
               ))}
             </ul>
             
-           
+            <div className="mt-8 p-4 bg-gray-800 rounded-lg">
+              <h5 className="font-semibold mb-2">Newsletter</h5>
+              <p className="text-sm text-gray-400 mb-3">Stay updated with airport news</p>
+              <div className="flex">
+                <input
+                  type="email"
+                  placeholder="Your email"
+                  className="flex-1 bg-gray-700 text-white px-3 py-2 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+                <button className="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-r-lg transition-colors duration-300">
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
