@@ -14,15 +14,22 @@ const Header = () => {
   }, []);
 
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setIsMenuOpen(false);
+    const navItem = navItems.find(item => item.id === sectionId);
+    if (navItem?.isPage) {
+      window.open(`/${sectionId}`, '_blank');
+    } else {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+        setIsMenuOpen(false);
+      }
     }
   };
 
   const navItems = [
     { id: 'home', label: 'Home' },
+    { id: 'about', label: 'About', isPage: true },
+    { id: 'news', label: 'News', isPage: true },
     { id: 'flights', label: 'Flights' },
     { id: 'services', label: 'Services' },
     { id: 'taxi-services', label: 'Taxi Services' },

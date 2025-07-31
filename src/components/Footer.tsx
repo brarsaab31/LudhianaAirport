@@ -20,6 +20,12 @@ const Footer = () => {
     'Business Lounge'
   ];
 
+  const legalLinks = [
+    { name: 'Privacy Policy', path: '/privacy-policy' },
+    { name: 'Terms of Use', path: '/terms-of-use' },
+    { name: 'Contact', path: '/contact' },
+    { name: 'Disclaimer', path: '/disclaimer' }
+  ];
   const contact = [
     { icon: Phone, text: '+91 161 234 5678', href: 'tel:+91161234567' },
     { icon: Mail, text: 'info@ludhianaairport.com', href: 'mailto:info@ludhianaairport.com' },
@@ -91,6 +97,24 @@ const Footer = () => {
           </div>
 
           <div>
+            <h4 className="text-lg font-semibold mb-6">Legal</h4>
+            <ul className="space-y-3">
+              {legalLinks.map((link, index) => (
+                <li key={index}>
+                  <a 
+                    href={link.path} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-gray-400 hover:text-white transition-colors duration-300"
+                  >
+                    {link.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
             <h4 className="text-lg font-semibold mb-6">Contact Info</h4>
             <ul className="space-y-4">
               {contact.map((item, index) => (
@@ -129,9 +153,9 @@ const Footer = () => {
               © 2025 Halwara International Airport. All rights reserved.
             </p>
             <div className="flex space-x-8 text-sm text-gray-400">
-              <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-              <a href="#" className="hover:text-white transition-colors">Accessibility</a>
+              <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Privacy Policy</a>
+              <a href="/terms-of-use" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Terms of Service</a>
+              <a href="/disclaimer" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Disclaimer</a>
             </div>
           </div>
         </div>
