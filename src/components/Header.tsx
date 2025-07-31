@@ -43,7 +43,7 @@ const Header = () => {
     { icon: Facebook, href: 'https://www.facebook.com/halwaraairport', label: 'Facebook' },
     { icon: Twitter, href: 'https://x.com/halwaraairport', label: 'Twitter' },
     { icon: Instagram, href: 'https://www.instagram.com/ludhianaairport', label: 'Instagram' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' }
+   
   ];
 
   return (
