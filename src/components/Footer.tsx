@@ -21,10 +21,10 @@ const Footer = () => {
   ];
 
   const legalLinks = [
-    { name: 'Privacy Policy', path: '/privacy-policy' },
-    { name: 'Terms of Use', path: '/terms-of-use' },
-    { name: 'Contact', path: '/contact' },
-    { name: 'Disclaimer', path: '/disclaimer' }
+    { name: 'Privacy Policy', path: '/privacy-policy', external: false },
+    { name: 'Terms of Use', path: '/terms-of-use', external: false },
+    { name: 'Contact', path: '/contact', external: false },
+    { name: 'Disclaimer', path: '/disclaimer', external: false }
   ];
   const contact = [
     { icon: Phone, text: '+91 161 234 5678', href: 'tel:+91161234567' },
@@ -98,10 +98,8 @@ const Footer = () => {
             <ul className="space-y-3">
               {legalLinks.map((link, index) => (
                 <li key={index}>
-                  <a 
-                    href={link.path} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
+                  <a
+                    href={link.path}
                     className="text-gray-400 hover:text-white transition-colors duration-300"
                   >
                     {link.name}
@@ -149,9 +147,9 @@ const Footer = () => {
               © 2025 Halwara International Airport. All rights reserved.
             </p>
             <div className="flex space-x-8 text-sm text-gray-400">
-              <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Privacy Policy</a>
-              <a href="/terms-of-use" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Terms of Service</a>
-              <a href="/disclaimer" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Disclaimer</a>
+              <a href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</a>
+              <a href="/terms-of-use" className="hover:text-white transition-colors">Terms of Service</a>
+              <a href="/disclaimer" className="hover:text-white transition-colors">Disclaimer</a>
             </div>
           </div>
         </div>
