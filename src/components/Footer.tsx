@@ -1,5 +1,6 @@
 import React from 'react';
 import { Plane, Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const quickLinks = [
@@ -98,12 +99,12 @@ const Footer = () => {
             <ul className="space-y-3">
               {legalLinks.map((link, index) => (
                 <li key={index}>
-                  <a
-                    href={link.path}
+                  <Link
+                    to={link.path}
                     className="text-gray-400 hover:text-white transition-colors duration-300"
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -124,21 +125,6 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-                 
-            <div className="mt-8 p-4 bg-gray-800 rounded-lg">
-              <h5 className="font-semibold mb-2">Newsletter</h5>
-              <p className="text-sm text-gray-400 mb-3">Stay updated with airport news</p>
-              <div className="flex">
-                <input
-                  type="email"
-                  placeholder="Your email"
-                  className="flex-1 bg-gray-700 text-white px-3 py-2 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-                <button className="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-r-lg transition-colors duration-300">
-                  Subscribe
-                </button>
-              </div>
-            </div>
           </div>
         </div>
                <div className="border-t border-gray-800 mt-12 pt-8">
@@ -147,9 +133,9 @@ const Footer = () => {
               © 2025 Halwara International Airport. All rights reserved.
             </p>
             <div className="flex space-x-8 text-sm text-gray-400">
-              <a href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</a>
-              <a href="/terms-of-use" className="hover:text-white transition-colors">Terms of Service</a>
-              <a href="/disclaimer" className="hover:text-white transition-colors">Disclaimer</a>
+              <Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
+              <Link to="/terms-of-use" className="hover:text-white transition-colors">Terms of Service</Link>
+              <Link to="/disclaimer" className="hover:text-white transition-colors">Disclaimer</Link>
             </div>
           </div>
         </div>
