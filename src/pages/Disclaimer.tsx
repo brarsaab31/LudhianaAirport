@@ -140,6 +140,7 @@ const Disclaimer = () => {
               <p className="text-red-700">
 All content is sourced from publicly available data, news, and user submissions. We make efforts to ensure accuracy but cannot guarantee it. For official updates, flight information, or government announcements, please refer to authorized sources.
  </p>
+              
               <p className="text-red-700">
                 Use the information on this site at your own discretion.
 
