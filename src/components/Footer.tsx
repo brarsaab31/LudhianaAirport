@@ -102,6 +102,7 @@ const Footer = () => {
                   <Link
                     to={link.path}
                     className="text-gray-400 hover:text-white transition-colors duration-300"
+                    onClick={() => window.scrollTo(0, 0)}
                   >
                     {link.name}
                   </Link>
@@ -133,9 +134,9 @@ const Footer = () => {
               © 2025 Halwara International Airport. All rights reserved.
             </p>
             <div className="flex space-x-8 text-sm text-gray-400">
-              <Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
-              <Link to="/terms-of-use" className="hover:text-white transition-colors">Terms of Service</Link>
-              <Link to="/disclaimer" className="hover:text-white transition-colors">Disclaimer</Link>
+              <Link to="/privacy-policy" className="hover:text-white transition-colors" onClick={() => window.scrollTo(0, 0)}>Privacy Policy</Link>
+              <Link to="/terms-of-use" className="hover:text-white transition-colors" onClick={() => window.scrollTo(0, 0)}>Terms of Service</Link>
+              <Link to="/disclaimer" className="hover:text-white transition-colors" onClick={() => window.scrollTo(0, 0)}>Disclaimer</Link>
             </div>
           </div>
         </div>
