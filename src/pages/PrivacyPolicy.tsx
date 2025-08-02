@@ -102,7 +102,7 @@ const PrivacyPolicy = () => {
                 Last updated: January 27, 2025
               </p>
               <p className="text-gray-600 mt-4">
-                Halwara International Airport ("we," "our," or "us") is committed to protecting your privacy. 
+                Halwara International Airport is committed to protecting your privacy. 
                 This Privacy Policy explains how we collect, use, disclose, and safeguard your information 
                 when you visit our website or use our services.
               </p>
