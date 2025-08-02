@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Plane, Facebook, Twitter, Instagram, ChevronDown } from 'lucide-react';
-import { useNavigate, useLocation, Link } from 'react-router-dom';
+import { Menu, X, Plane, Facebook, Twitter, Instagram } from 'lucide-react';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isLegalDropdownOpen, setIsLegalDropdownOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
@@ -53,12 +52,6 @@ const Header = () => {
     { id: 'contact', label: 'Contact' },
   ];
 
-  const legalItems = [
-    { id: 'privacy-policy', label: 'Privacy Policy' },
-    { id: 'terms-of-use', label: 'Terms of Use' },
-    { id: 'disclaimer', label: 'Disclaimer' }
-  ];
-
   const socialLinks = [
     { icon: Facebook, href: 'https://www.facebook.com/halwaraairport', label: 'Facebook' },
     { icon: Twitter, href: 'https://x.com/halwaraairport', label: 'Twitter' },
@@ -66,7 +59,9 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      scrolled ? 'bg-white shadow-lg' : 'bg-white/95 backdrop-blur-sm'
+    }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-2">
@@ -109,36 +104,6 @@ const Header = () => {
                 {item.label}
               </button>
             ))}
-            
-            {/* Legal Dropdown */}
-            <div 
-              className="relative"
-              onMouseEnter={() => setIsLegalDropdownOpen(true)}
-              onMouseLeave={() => setIsLegalDropdownOpen(false)}
-            >
-              <button className="flex items-center space-x-1 text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors">
-                <span>Legal</span>
-                <ChevronDown className="h-4 w-4" />
-              </button>
-              
-              {isLegalDropdownOpen && (
-                <div className="absolute top-full left-0 mt-1 w-48 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50">
-                  {legalItems.map((item) => (
-                    <Link
-                      key={item.id}
-                      to={`/${item.id}`}
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-600 transition-colors"
-                      onClick={() => {
-                        setIsLegalDropdownOpen(false);
-                        window.scrollTo(0, 0);
-                      }}
-                    >
-                      {item.label}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
           </nav>
 
           <button
@@ -161,23 +126,6 @@ const Header = () => {
                 {item.label}
               </button>
             ))}
-            
-            <div className="px-4 py-2 border-t border-gray-200 mt-2">
-              <p className="text-sm font-medium text-gray-700 mb-2">Legal</p>
-              {legalItems.map((item) => (
-                <Link
-                  key={item.id}
-                  to={`/${item.id}`}
-                  className="block px-4 py-1 text-sm text-gray-600 hover:text-blue-600"
-                  onClick={() => {
-                    setIsMenuOpen(false);
-                    window.scrollTo(0, 0);
-                  }}
-                >
-                  {item.label}
-                </Link>
-              ))}
-            </div>
             
             <div className="px-4 py-2 border-t border-gray-200 mt-2">
               <p className="text-sm text-gray-600 mb-2">Follow us:</p>
