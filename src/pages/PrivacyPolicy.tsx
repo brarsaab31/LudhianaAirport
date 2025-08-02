@@ -137,7 +137,7 @@ const PrivacyPolicy = () => {
               <div className="space-y-2">
                 <div className="flex items-center space-x-3">
                   <Mail className="h-5 w-5 text-blue-600" />
-                  <span className="text-gray-700">privacy@halwaraairport.com</span>
+                  <span className="text-gray-700">info@halwaraairport.com</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="h-5 w-5 text-blue-600" />
