@@ -148,7 +148,7 @@ const Disclaimer = () => {
               <h3 className="text-xl font-bold text-blue-800 mb-4">Contact for Clarifications</h3>
               <p className="text-blue-700">
                 If you have any questions about this disclaimer or need clarification on any matter, 
-                please contact us at <strong>legal@halwaraairport.com</strong> or call 
+                please contact us at <strong>info@halwaraairport.com</strong> or call 
                 <strong> +91 161 234 5678</strong>.
               </p>
             </div>
