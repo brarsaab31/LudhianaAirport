@@ -138,12 +138,12 @@ const Disclaimer = () => {
                 This website is not the official website of Halwara International Airport or any government authority. It is a personal initiative created to help people access general and useful information about the airport.
  </p>
               <p className="text-red-700">
-All content is sourced from publicly available data, news, and user submissions. We make efforts to ensure accuracy but cannot guarantee it. For official updates, flight information, or government announcements, please refer to authorized sources.<p></p>
+All content is sourced from publicly available data, news, and user submissions. We make efforts to ensure accuracy but cannot guarantee it. For official updates, flight information, or government announcements, please refer to authorized sources.<p> </p>
  </p>
              
               <p className="text-red-700">
                 Use the information on this site at your own discretion.
-<p></p>
+<p> </p>
               </p>
               
               <p className="text-red-700">
