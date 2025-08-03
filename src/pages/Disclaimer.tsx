@@ -143,7 +143,7 @@ All content is sourced from publicly available data, news, and user submissions.
              
               <p className="text-red-700">
                 Use the information on this site at your own discretion.
-
+<p></p>
               </p>
               
               <p className="text-red-700">
