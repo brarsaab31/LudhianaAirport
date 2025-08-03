@@ -46,7 +46,7 @@ const ScrollingPlane = () => {
           <div className="relative">
             {/* Plane icon - solid filled, rotated to point down */}
             <Plane 
-              className="h-8 w-8 text-blue-600 transform rotate-90" 
+              className="h-8 w-8 text-blue-600 transform rotate-180" 
               fill="currentColor"
             />
           </div>
