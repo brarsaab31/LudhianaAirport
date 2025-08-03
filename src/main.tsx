@@ -11,6 +11,9 @@ import News from './pages/News.tsx';
 import BaggageClaims from './pages/BaggageClaims.tsx';
 import FlightStatus from './pages/FlightStatus.tsx';
 import TerminalMap from './pages/TerminalMap.tsx';
+import LostAndFound from './pages/LostAndFound.tsx';
+import SpecialAssistance from './pages/SpecialAssistance.tsx';
+import BusinessLounge from './pages/BusinessLounge.tsx';
 import './index.css';
 
 createRoot(document.getElementById('root')!).render(
@@ -24,6 +27,9 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/baggage-claims" element={<BaggageClaims />} />
         <Route path="/flight-status" element={<FlightStatus />} />
         <Route path="/terminal-map" element={<TerminalMap />} />
+        <Route path="/lost-and-found" element={<LostAndFound />} />
+        <Route path="/special-assistance" element={<SpecialAssistance />} />
+        <Route path="/business-lounge" element={<BusinessLounge />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-of-use" element={<TermsOfUse />} />
         <Route path="/disclaimer" element={<Disclaimer />} />

@@ -18,27 +18,41 @@ const ScrollingPlane = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Calculate plane position based on scroll
-  const planeProgress = Math.min(scrollY / (document.documentElement.scrollHeight - window.innerHeight), 1);
-  const planeY = planeProgress * (window.innerHeight - 100);
+  // Calculate plane position based on scroll (moves down as you scroll down)
+  const documentHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const scrollProgress = Math.min(scrollY / documentHeight, 1);
+  const planeY = 100 + (scrollProgress * (window.innerHeight - 200)); // Start at 100px from top
 
   if (!isVisible) return null;
 
   return (
-    <div className="fixed right-8 z-40 pointer-events-none">
-      <div
-        className="transition-all duration-300 ease-out"
-        style={{
-          transform: `translateY(${planeY}px)`,
-        }}
-      >
-        <div className="bg-blue-600 p-3 rounded-full shadow-lg animate-pulse">
-          <Plane className="h-6 w-6 text-white transform rotate-45" />
-        </div>
-        {/* Plane trail */}
-        <div className="absolute top-1/2 right-full w-16 h-0.5 bg-gradient-to-l from-blue-400 to-transparent opacity-60"></div>
+    <>
+      {/* Scroll track behind the plane */}
+      <div className="fixed right-6 top-0 bottom-0 w-1 bg-gray-200 z-30 opacity-60">
+        <div 
+          className="w-full bg-blue-500 transition-all duration-100 ease-out"
+          style={{ height: `${scrollProgress * 100}%` }}
+        />
       </div>
-    </div>
+      
+      {/* Plane */}
+      <div className="fixed right-4 z-40 pointer-events-none">
+        <div
+          className="transition-all duration-100 ease-out"
+          style={{
+            transform: `translateY(${planeY}px)`,
+          }}
+        >
+          <div className="relative">
+            {/* Plane icon - solid filled, rotated to point down */}
+            <Plane 
+              className="h-8 w-8 text-blue-600 transform rotate-90" 
+              fill="currentColor"
+            />
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 

@@ -13,12 +13,12 @@ const Footer = () => {
   ];
 
   const services = [
-    'Airport Taxi',
-    'Hotel Bookings',
-    'Car Rental',
-    'Lost & Found',
-    'Special Assistance',
-    'Business Lounge'
+    { name: 'Airport Taxi', path: '/#taxi-services' },
+    { name: 'Hotel Bookings', path: '/#hotels' },
+    { name: 'Car Rental', path: '/#pickup' },
+    { name: 'Lost & Found', path: '/lost-and-found' },
+    { name: 'Special Assistance', path: '/special-assistance' },
+    { name: 'Business Lounge', path: '/business-lounge' }
   ];
 
   const legalLinks = [
@@ -90,9 +90,13 @@ const Footer = () => {
             <ul className="space-y-3">
               {services.map((service, index) => (
                 <li key={index}>
-                  <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">
-                    {service}
-                  </a>
+                  <Link
+                    to={service.path}
+                    className="text-gray-400 hover:text-white transition-colors duration-300"
+                    onClick={() => window.scrollTo(0, 0)}
+                  >
+                    {service.name}
+                  </Link>
                 </li>
               ))}
             </ul>
