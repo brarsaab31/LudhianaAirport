@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const quickLinks = [
-    'Flight Status',
-    'Check-in',
-    'Baggage Info',
-    'Terminal Map',
-    'Parking',
-    'Shopping & Dining'
+    { name: 'Flight Status', path: '/flight-status', external: false },
+    { name: 'Baggage Claims', path: '/baggage-claims', external: false },
+    { name: 'Terminal Map', path: '/terminal-map', external: false },
+    { name: 'Parking', path: '/#parking', external: false },
+    { name: 'Hotels', path: '/#hotels', external: false },
+    { name: 'Services', path: '/#services', external: false }
   ];
 
   const services = [
@@ -73,9 +73,13 @@ const Footer = () => {
             <ul className="space-y-3">
               {quickLinks.map((link, index) => (
                 <li key={index}>
-                  <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">
-                    {link}
-                  </a>
+                  <Link
+                    to={link.path}
+                    className="text-gray-400 hover:text-white transition-colors duration-300"
+                    onClick={() => window.scrollTo(0, 0)}
+                  >
+                    {link.name}
+                  </Link>
                 </li>
               ))}
             </ul>

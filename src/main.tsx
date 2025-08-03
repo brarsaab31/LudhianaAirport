@@ -8,6 +8,9 @@ import Contact from './pages/Contact.tsx';
 import Disclaimer from './pages/Disclaimer.tsx';
 import About from './pages/About.tsx';
 import News from './pages/News.tsx';
+import BaggageClaims from './pages/BaggageClaims.tsx';
+import FlightStatus from './pages/FlightStatus.tsx';
+import TerminalMap from './pages/TerminalMap.tsx';
 import './index.css';
 
 createRoot(document.getElementById('root')!).render(
@@ -18,6 +21,9 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/about" element={<About />} />
         <Route path="/news" element={<News />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/baggage-claims" element={<BaggageClaims />} />
+        <Route path="/flight-status" element={<FlightStatus />} />
+        <Route path="/terminal-map" element={<TerminalMap />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-of-use" element={<TermsOfUse />} />
         <Route path="/disclaimer" element={<Disclaimer />} />

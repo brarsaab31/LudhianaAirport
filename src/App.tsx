@@ -10,6 +10,7 @@ import PickupServices from './components/PickupServices';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 import AdBanner from './components/AdBanner';
+import ScrollingPlane from './components/ScrollingPlane';
 
 function App() {
   // Advertisement data for different sections
@@ -97,6 +98,7 @@ function App() {
   return (
     <div className="min-h-screen">
       <Header />
+      <ScrollingPlane />
       <Hero />
       <FlightInfo />
       <AdBanner ads={flightAds} />
