@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import AdBanner from '../components/AdBanner';
-import { Wheelchair, Heart, Eye, Ear, Baby, Phone } from 'lucide-react';
+import { Armchair as Wheelchair, Heart, Eye, Ear, Baby, Phone } from 'lucide-react';
 
 const SpecialAssistance = () => {
   const ads = [
