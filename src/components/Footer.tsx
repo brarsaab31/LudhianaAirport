@@ -13,9 +13,9 @@ const Footer = () => {
   ];
 
   const services = [
-    { name: 'Airport Taxi', path: '/#taxi-services' },
-    { name: 'Hotel Bookings', path: '/#hotels' },
-    { name: 'Car Rental', path: '/#pickup' },
+    { name: 'Airport Taxi', path: '/airport-taxi' },
+    { name: 'Hotel Bookings', path: '/hotel-booking' },
+    { name: 'Car Rental', path: '/car-rental' },
     { name: 'Lost & Found', path: '/lost-and-found' },
     { name: 'Special Assistance', path: '/special-assistance' },
     { name: 'Business Lounge', path: '/business-lounge' }

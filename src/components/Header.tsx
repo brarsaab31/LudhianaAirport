@@ -19,7 +19,11 @@ const Header = () => {
   const scrollToSection = (sectionId: string) => {
     const navItem = navItems.find(item => item.id === sectionId);
     if (navItem?.isPage) {
-      navigate(`/${sectionId}`);
+      if (sectionId === 'home') {
+        navigate('/');
+      } else {
+        navigate(`/${sectionId}`);
+      }
     } else {
       if (location.pathname !== '/') {
         navigate('/');
@@ -45,8 +49,8 @@ const Header = () => {
     { id: 'news', label: 'News', isPage: true },
     { id: 'flights', label: 'Flights' },
     { id: 'services', label: 'Services' },
-    { id: 'taxi-services', label: 'Taxi Services' },
-    { id: 'hotels', label: 'Hotels' },
+    { id: 'airport-taxi', label: 'Taxi Services', isPage: true },
+    { id: 'hotel-booking', label: 'Hotels', isPage: true },
     { id: 'parking', label: 'Parking' },
     { id: 'pickup', label: 'Pick-up' },
     { id: 'contact', label: 'Contact' },

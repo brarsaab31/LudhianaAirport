@@ -14,6 +14,9 @@ import TerminalMap from './pages/TerminalMap.tsx';
 import LostAndFound from './pages/LostAndFound.tsx';
 import SpecialAssistance from './pages/SpecialAssistance.tsx';
 import BusinessLounge from './pages/BusinessLounge.tsx';
+import HotelBooking from './pages/HotelBooking.tsx';
+import CarRental from './pages/CarRental.tsx';
+import AirportTaxi from './pages/AirportTaxi.tsx';
 import './index.css';
 
 createRoot(document.getElementById('root')!).render(
@@ -30,6 +33,9 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/lost-and-found" element={<LostAndFound />} />
         <Route path="/special-assistance" element={<SpecialAssistance />} />
         <Route path="/business-lounge" element={<BusinessLounge />} />
+        <Route path="/hotel-booking" element={<HotelBooking />} />
+        <Route path="/car-rental" element={<CarRental />} />
+        <Route path="/airport-taxi" element={<AirportTaxi />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-of-use" element={<TermsOfUse />} />
         <Route path="/disclaimer" element={<Disclaimer />} />
