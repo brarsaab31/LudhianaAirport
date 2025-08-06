@@ -5,33 +5,6 @@ import AdBanner from '../components/AdBanner';
 import { MapPin, Users, Calendar, Award, Target, Eye, Heart } from 'lucide-react';
 
 const About = () => {
-  const ads = [
-    {
-      id: 1,
-      title: 'Punjab Tourism',
-      description: 'Discover the beauty of Punjab',
-      image: 'https://images.pexels.com/photos/1007426/pexels-photo-1007426.jpeg?auto=compress&cs=tinysrgb&w=800',
-      website: 'https://www.punjabtourism.gov.in',
-      color: 'bg-green-600'
-    },
-    {
-      id: 2,
-      title: 'Infrastructure Development',
-      description: 'Building tomorrow\'s India',
-      image: 'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=800',
-      website: 'https://www.nhai.gov.in',
-      color: 'bg-blue-600'
-    },
-    {
-      id: 3,
-      title: 'Aviation Industry',
-      description: 'Connecting India to the world',
-      image: 'https://images.pexels.com/photos/912050/pexels-photo-912050.jpeg?auto=compress&cs=tinysrgb&w=800',
-      website: 'https://www.civilaviation.gov.in',
-      color: 'bg-indigo-600'
-    }
-  ];
-
   const milestones = [
     { year: '2023', event: 'Project Announcement', description: 'Halwara International Airport project officially announced' },
     { year: '2024', event: 'Construction Begins', description: 'Ground breaking ceremony and construction commencement' },
@@ -94,7 +67,7 @@ const About = () => {
           </div>
         </div>
 
-        <AdBanner ads={ads} />
+        <AdBanner />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
@@ -198,7 +171,7 @@ const About = () => {
           </div>
         </div>
 
-        <AdBanner ads={ads} />
+        <AdBanner />
       </div>
 
       <Footer />
