@@ -53,7 +53,6 @@ const Header = () => {
     { id: 'hotel-booking', label: 'Hotels', isPage: true },
     { id: 'parking', label: 'Parking' },
     { id: 'pickup', label: 'Pick-up' },
-    { id: 'advertise', label: 'Advertise', isPage: true },
     { id: 'contact', label: 'Contact' },
   ];
 

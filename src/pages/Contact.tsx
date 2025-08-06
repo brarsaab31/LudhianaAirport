@@ -6,6 +6,33 @@ import ContactForm from '../components/ContactForm';
 import { MapPin, Phone, Mail, Clock, Car, Plane } from 'lucide-react';
 
 const Contact = () => {
+  const ads = [
+    {
+      id: 1,
+      title: 'Communication Services',
+      description: 'Stay connected worldwide',
+      image: 'https://images.pexels.com/photos/33999/pexels-photo-33999.jpg?auto=compress&cs=tinysrgb&w=800',
+      website: 'https://www.airtel.in',
+      color: 'bg-red-600'
+    },
+    {
+      id: 2,
+      title: 'Travel Support',
+      description: '24/7 travel assistance',
+      image: 'https://images.pexels.com/photos/1591447/pexels-photo-1591447.jpeg?auto=compress&cs=tinysrgb&w=800',
+      website: 'https://www.makemytrip.com',
+      color: 'bg-blue-600'
+    },
+    {
+      id: 3,
+      title: 'Customer Care',
+      description: 'Professional support services',
+      image: 'https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800',
+      website: 'https://www.zendesk.com',
+      color: 'bg-green-600'
+    }
+  ];
+
   const contactInfo = [
     {
       icon: Phone,
@@ -87,7 +114,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <AdBanner />
+        <AdBanner ads={ads} />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
@@ -148,7 +175,7 @@ const Contact = () => {
 
         <ContactForm />
         
-        <AdBanner />
+        <AdBanner ads={ads} />
       </div>
 
       <Footer />

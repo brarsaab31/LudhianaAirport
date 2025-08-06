@@ -7,6 +7,33 @@ import { Calendar, User, ArrowRight, Tag, Search } from 'lucide-react';
 const News = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
 
+  const ads = [
+    {
+      id: 1,
+      title: 'News & Media',
+      description: 'Stay informed with latest updates',
+      image: 'https://images.pexels.com/photos/518543/pexels-photo-518543.jpeg?auto=compress&cs=tinysrgb&w=800',
+      website: 'https://www.thehindu.com',
+      color: 'bg-blue-600'
+    },
+    {
+      id: 2,
+      title: 'Aviation News',
+      description: 'Latest in aviation industry',
+      image: 'https://images.pexels.com/photos/912050/pexels-photo-912050.jpeg?auto=compress&cs=tinysrgb&w=800',
+      website: 'https://www.aviationweek.com',
+      color: 'bg-indigo-600'
+    },
+    {
+      id: 3,
+      title: 'Punjab Updates',
+      description: 'Regional news and developments',
+      image: 'https://images.pexels.com/photos/1007426/pexels-photo-1007426.jpeg?auto=compress&cs=tinysrgb&w=800',
+      website: 'https://www.tribuneindia.com',
+      color: 'bg-green-600'
+    }
+  ];
+
   const categories = [
     { id: 'all', name: 'All News' },
     { id: 'construction', name: 'Construction Updates' },
@@ -99,7 +126,7 @@ const News = () => {
           </div>
         </div>
 
-        <AdBanner />
+        <AdBanner ads={ads} />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           {/* Category Filter */}
@@ -218,7 +245,7 @@ const News = () => {
           </div>
         </div>
 
-        <AdBanner />
+        <AdBanner ads={ads} />
       </div>
 
       <Footer />
