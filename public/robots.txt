@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://ludhianainternationalairport.com/sitemap.xml
+Sitemap: https://chic-tulumba-6b08d3.netlify.app/sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 1

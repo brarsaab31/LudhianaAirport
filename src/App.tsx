@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import FlightInfo from './components/FlightInfo';
@@ -96,6 +97,14 @@ function App() {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Halwara International Airport - Punjab's Premier Aviation Hub</title>
+        <meta name="description" content="Halwara International Airport - Punjab's newest international gateway connecting Ludhiana to the world. Modern facilities, world-class services, opening 2025." />
+        <link rel="canonical" href="https://chic-tulumba-6b08d3.netlify.app/" />
+        <meta property="og:title" content="Halwara International Airport - Punjab's Premier Aviation Hub" />
+        <meta property="og:description" content="Punjab's newest international gateway connecting Ludhiana to the world. Modern facilities, world-class services, opening 2025." />
+        <meta property="og:url" content="https://chic-tulumba-6b08d3.netlify.app/" />
+      </Helmet>
       <Header />
       <Hero />
       <FlightInfo />

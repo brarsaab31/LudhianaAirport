@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import AdBanner from '../components/AdBanner';
+import { Helmet } from 'react-helmet-async';
 import { MapPin, Users, Calendar, Award, Target, Eye, Heart } from 'lucide-react';
 
 const About = () => {
@@ -82,6 +83,14 @@ const About = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <Helmet>
+        <title>About Halwara International Airport - Punjab's Aviation Hub</title>
+        <meta name="description" content="Learn about Halwara International Airport, Punjab's newest aviation gateway. Discover our mission, vision, facilities, and development timeline." />
+        <link rel="canonical" href="https://chic-tulumba-6b08d3.netlify.app/about" />
+        <meta property="og:title" content="About Halwara International Airport - Punjab's Aviation Hub" />
+        <meta property="og:description" content="Learn about Halwara International Airport, Punjab's newest aviation gateway. Discover our mission, vision, facilities, and development timeline." />
+        <meta property="og:url" content="https://chic-tulumba-6b08d3.netlify.app/about" />
+      </Helmet>
       <Header />
       
       <div className="pt-20">

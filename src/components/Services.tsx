@@ -53,7 +53,7 @@ const Services = () => {
         <div className="text-center mb-16">
           <h2 id="services-heading" className="text-4xl font-bold text-gray-900 mb-4">Airport Services</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Comprehensive services designed to make your travel experience seamless and comfortable
+            Comprehensive services designed to make your travel experience seamless and comfortable. Halwara International Airport offers a wide range of passenger services including 24/7 taxi services with professional drivers, high-speed WiFi connectivity throughout the terminal, diverse dining and retail options featuring local Punjab cuisine and international brands, foreign exchange services with competitive rates, dedicated customer support in multiple languages, and comprehensive baggage handling services. Our airport facilities include modern check-in counters, security screening areas, comfortable waiting lounges, business centers, prayer rooms, medical facilities, and special assistance for passengers with disabilities. We also provide convenient parking solutions, hotel booking services, car rental options, and ground transportation coordination to ensure a complete travel experience for all passengers visiting Punjab.
           </p>
         </div>
 

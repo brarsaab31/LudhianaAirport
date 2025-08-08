@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import AdBanner from '../components/AdBanner';
 import ContactForm from '../components/ContactForm';
+import { Helmet } from 'react-helmet-async';
 import { MapPin, Phone, Mail, Clock, Car, Plane } from 'lucide-react';
 
 const Contact = () => {
@@ -102,6 +103,14 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <Helmet>
+        <title>Contact Halwara International Airport - Get in Touch</title>
+        <meta name="description" content="Contact Halwara International Airport for inquiries, support, and assistance. Find phone numbers, email addresses, and location details." />
+        <link rel="canonical" href="https://chic-tulumba-6b08d3.netlify.app/contact" />
+        <meta property="og:title" content="Contact Halwara International Airport - Get in Touch" />
+        <meta property="og:description" content="Contact Halwara International Airport for inquiries, support, and assistance. Find phone numbers, email addresses, and location details." />
+        <meta property="og:url" content="https://chic-tulumba-6b08d3.netlify.app/contact" />
+      </Helmet>
       <Header />
       
       <div className="pt-20">

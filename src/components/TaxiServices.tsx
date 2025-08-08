@@ -165,7 +165,7 @@ const TaxiServices = () => {
                   <div key={index} className="bg-gray-50 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300">
                     <img
                       src={vehicle.image}
-                      alt={vehicle.name}
+                      alt={`${vehicle.name} - Airport taxi service vehicle available for booking from Halwara International Airport`}
                       className="w-full h-48 object-cover"
                     />
                     <div className="p-6">

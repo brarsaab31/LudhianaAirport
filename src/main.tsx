@@ -1,6 +1,7 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import App from './App.tsx';
 import PrivacyPolicy from './pages/PrivacyPolicy.tsx';
 import TermsOfUse from './pages/TermsOfUse.tsx';
@@ -21,25 +22,27 @@ import './index.css';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <Router>
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/news" element={<News />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/baggage-claims" element={<BaggageClaims />} />
-        <Route path="/flight-status" element={<FlightStatus />} />
-        <Route path="/terminal-map" element={<TerminalMap />} />
-        <Route path="/lost-and-found" element={<LostAndFound />} />
-        <Route path="/special-assistance" element={<SpecialAssistance />} />
-        <Route path="/business-lounge" element={<BusinessLounge />} />
-        <Route path="/hotel-booking" element={<HotelBooking />} />
-        <Route path="/car-rental" element={<CarRental />} />
-        <Route path="/airport-taxi" element={<AirportTaxi />} />
-        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-        <Route path="/terms-of-use" element={<TermsOfUse />} />
-        <Route path="/disclaimer" element={<Disclaimer />} />
-      </Routes>
-    </Router>
+    <HelmetProvider>
+      <Router>
+        <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/news" element={<News />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/baggage-claims" element={<BaggageClaims />} />
+          <Route path="/flight-status" element={<FlightStatus />} />
+          <Route path="/terminal-map" element={<TerminalMap />} />
+          <Route path="/lost-and-found" element={<LostAndFound />} />
+          <Route path="/special-assistance" element={<SpecialAssistance />} />
+          <Route path="/business-lounge" element={<BusinessLounge />} />
+          <Route path="/hotel-booking" element={<HotelBooking />} />
+          <Route path="/car-rental" element={<CarRental />} />
+          <Route path="/airport-taxi" element={<AirportTaxi />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-use" element={<TermsOfUse />} />
+          <Route path="/disclaimer" element={<Disclaimer />} />
+        </Routes>
+      </Router>
+    </HelmetProvider>
   </StrictMode>
 );

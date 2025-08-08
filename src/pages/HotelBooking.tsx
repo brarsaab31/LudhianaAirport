@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import AdBanner from '../components/AdBanner';
+import { Helmet } from 'react-helmet-async';
 import { Star, MapPin, Wifi, Car, Utensils, Dumbbell, Calendar, Users, Phone } from 'lucide-react';
 
 const HotelBooking = () => {
@@ -109,6 +110,14 @@ const HotelBooking = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <Helmet>
+        <title>Hotel Booking Near Halwara Airport - Best Rates Guaranteed</title>
+        <meta name="description" content="Book hotels near Halwara International Airport at best rates. Find luxury and budget accommodations with airport shuttle, WiFi, and premium amenities." />
+        <link rel="canonical" href="https://chic-tulumba-6b08d3.netlify.app/hotel-booking" />
+        <meta property="og:title" content="Hotel Booking Near Halwara Airport - Best Rates Guaranteed" />
+        <meta property="og:description" content="Book hotels near Halwara International Airport at best rates. Find luxury and budget accommodations." />
+        <meta property="og:url" content="https://chic-tulumba-6b08d3.netlify.app/hotel-booking" />
+      </Helmet>
       <Header />
       
       <div className="pt-20">

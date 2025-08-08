@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import AdBanner from '../components/AdBanner';
+import { Helmet } from 'react-helmet-async';
 import { Plane, Search, Calendar, Clock, MapPin, AlertCircle } from 'lucide-react';
 
 const FlightStatus = () => {
@@ -70,6 +71,14 @@ const FlightStatus = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <Helmet>
+        <title>Flight Status - Halwara International Airport Live Updates</title>
+        <meta name="description" content="Check real-time flight status, arrivals, and departures at Halwara International Airport. Get live updates on flight schedules and gate information." />
+        <link rel="canonical" href="https://chic-tulumba-6b08d3.netlify.app/flight-status" />
+        <meta property="og:title" content="Flight Status - Halwara International Airport Live Updates" />
+        <meta property="og:description" content="Check real-time flight status, arrivals, and departures at Halwara International Airport." />
+        <meta property="og:url" content="https://chic-tulumba-6b08d3.netlify.app/flight-status" />
+      </Helmet>
       <Header />
       
       <div className="pt-20">

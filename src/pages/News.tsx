@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import AdBanner from '../components/AdBanner';
+import { Helmet } from 'react-helmet-async';
 import { Calendar, User, ArrowRight, Tag, Search } from 'lucide-react';
 
 const News = () => {
@@ -114,6 +115,14 @@ const News = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <Helmet>
+        <title>Latest News & Updates - Halwara International Airport</title>
+        <meta name="description" content="Stay updated with the latest news, construction progress, and announcements from Halwara International Airport. Get real-time updates on Punjab's newest airport." />
+        <link rel="canonical" href="https://chic-tulumba-6b08d3.netlify.app/news" />
+        <meta property="og:title" content="Latest News & Updates - Halwara International Airport" />
+        <meta property="og:description" content="Stay updated with the latest news, construction progress, and announcements from Halwara International Airport." />
+        <meta property="og:url" content="https://chic-tulumba-6b08d3.netlify.app/news" />
+      </Helmet>
       <Header />
       
       <div className="pt-20">

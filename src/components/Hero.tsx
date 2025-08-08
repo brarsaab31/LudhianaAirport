@@ -12,7 +12,8 @@ const Hero = () => {
           backgroundPosition: 'center',
           backgroundBlendMode: 'overlay'
         }}
-        aria-hidden="true"
+        role="img"
+        aria-label="Modern airport terminal with aircraft on tarmac"
       >
         <div className="absolute inset-0 bg-blue-900/70"></div>
       </div>
@@ -26,7 +27,7 @@ const Hero = () => {
         </h1>
         
         <p className="text-xl sm:text-2xl mb-8 text-blue-100 max-w-2xl mx-auto leading-relaxed">
-          Punjab's newest international gateway, connecting Ludhiana to the world with modern facilities and exceptional service. <p>"A helpful guide sharing info and updates about Halwara International Airport for everyone’s ease." </p>
+          Punjab's newest international gateway, connecting Ludhiana to the world with modern facilities and exceptional service. Halwara International Airport serves as the primary aviation hub for Punjab, offering domestic and international flights with world-class amenities. Located strategically in Halwara, this modern airport features state-of-the-art terminal facilities, comprehensive passenger services, and convenient ground transportation options. Our airport provides seamless connectivity to major Indian cities and international destinations, supporting both business and leisure travelers. With advanced security systems, comfortable lounges, dining options, and retail outlets, we ensure a premium travel experience. The airport also offers extensive parking facilities, hotel accommodations, taxi services, and special assistance for passengers with disabilities.
         </p>
         
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12 max-w-3xl mx-auto">

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import AdBanner from '../components/AdBanner';
+import { Helmet } from 'react-helmet-async';
 import { Car, Clock, MapPin, Phone, Star, Users, Shield, CreditCard, Calculator } from 'lucide-react';
 
 const AirportTaxi = () => {
@@ -139,6 +140,14 @@ const AirportTaxi = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <Helmet>
+        <title>Airport Taxi Service - Halwara to Ludhiana | 24/7 Available</title>
+        <meta name="description" content="Book reliable airport taxi service from Halwara International Airport to Ludhiana. 24/7 availability, licensed drivers, multiple payment options." />
+        <link rel="canonical" href="https://chic-tulumba-6b08d3.netlify.app/airport-taxi" />
+        <meta property="og:title" content="Airport Taxi Service - Halwara to Ludhiana | 24/7 Available" />
+        <meta property="og:description" content="Book reliable airport taxi service from Halwara International Airport to Ludhiana. 24/7 availability, licensed drivers." />
+        <meta property="og:url" content="https://chic-tulumba-6b08d3.netlify.app/airport-taxi" />
+      </Helmet>
       <Header />
       
       <div className="pt-20">
