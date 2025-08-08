@@ -38,7 +38,7 @@ const FlightInfo = () => {
             Coming Soon - Not Live Status
           </div>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Stay updated with real-time flight schedules and gate information. Halwara International Airport will provide comprehensive flight tracking services including departure and arrival times, gate assignments, and flight status updates. Our advanced flight information display system will show real-time data for all domestic and international flights. Passengers can check flight schedules, delays, cancellations, and boarding announcements through our digital displays and mobile-friendly website. The airport will serve major Indian cities including Delhi, Mumbai, Bangalore, Chennai, and Kolkata, with plans for international routes to Dubai, Singapore, and other popular destinations. Our flight operations team ensures accurate and timely information dissemination to enhance passenger experience and reduce travel uncertainties.
+            Stay updated with real-time flight schedules and gate information. 
           </p>
         </div>
 

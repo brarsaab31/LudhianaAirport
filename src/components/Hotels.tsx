@@ -56,7 +56,7 @@ const Hotels = () => {
         <div className="text-center mb-16">
           <h2 id="hotels-heading" className="text-4xl font-bold text-gray-900 mb-4">Best Hotels In Ludhiana</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Comfortable accommodations within easy reach of Halwara International Airport. Discover premium hotels in Ludhiana offering luxury amenities, business facilities, and convenient airport transfers. Our partner hotels provide world-class hospitality with modern rooms, fine dining restaurants, fitness centers, spa services, and conference facilities. Whether you're traveling for business or leisure, these carefully selected accommodations offer the perfect blend of comfort and convenience. Located strategically near the airport and major business districts, these hotels feature 24/7 room service, complimentary WiFi, airport shuttle services, and concierge assistance. From budget-friendly options to luxury suites, find the ideal accommodation that suits your needs and budget while exploring the vibrant city of Ludhiana and the beautiful state of Punjab.
+            Comfortable accommodations within easy reach of Halwara International Airport. 
           </p>
         </div>
 
