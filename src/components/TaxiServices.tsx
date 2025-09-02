@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Car, Clock, MapPin, Phone, Star, Users, Shield, CreditCard } from 'lucide-react';
 
 const TaxiServices = () => {
   const [selectedCategory, setSelectedCategory] = useState('economy');
+  const navigate = useNavigate();
 
   const taxiCategories = {
     economy: {
@@ -194,7 +196,15 @@ const TaxiServices = () => {
 
                       <div className="flex items-center justify-between">
                         <span className="text-2xl font-bold text-blue-600">{vehicle.rate}</span>
-                        <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors">
+                        <button 
+                          onClick={() => {
+                            navigate('/contact');
+                            setTimeout(() => {
+                              document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                            }, 100);
+                          }}
+                          className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors"
+                        >
                           Book Now
                         </button>
                       </div>

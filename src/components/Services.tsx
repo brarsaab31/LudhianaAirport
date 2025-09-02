@@ -1,7 +1,10 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Car, Wifi, Coffee, ShoppingBag, CreditCard, Phone } from 'lucide-react';
 
 const Services = () => {
+  const navigate = useNavigate();
+
   const services = [
     {
       icon: Car,
@@ -83,6 +86,14 @@ const Services = () => {
                   onClick={() => {
                     if (service.title === 'Taxi Services') {
                       document.getElementById('taxi-services')?.scrollIntoView({ behavior: 'smooth' });
+                    } else if (service.title === 'Dining & Retail') {
+                      navigate('/dining-retail');
+                    } else if (service.title === 'Currency Exchange') {
+                      window.open('https://www.xe.com', '_blank');
+                    } else if (service.title === 'Customer Support') {
+                      navigate('/contact');
+                    } else if (service.title === 'Baggage Services') {
+                      navigate('/baggage-claims');
                     }
                   }}
                   className="w-full bg-gray-900 hover:bg-blue-600 text-white py-3 px-6 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105"

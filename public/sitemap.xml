@@ -108,6 +108,14 @@
     <priority>0.8</priority>
   </url>
   
+  <!-- Dining & Retail -->
+  <url>
+    <loc>https://chic-tulumba-6b08d3.netlify.app/dining-retail</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
   <!-- Privacy Policy -->
   <url>
     <loc>https://chic-tulumba-6b08d3.netlify.app/privacy-policy</loc>

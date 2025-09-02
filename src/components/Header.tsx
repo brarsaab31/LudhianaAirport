@@ -49,6 +49,7 @@ const Header = () => {
     { id: 'news', label: 'News', isPage: true },
     { id: 'flights', label: 'Flights' },
     { id: 'services', label: 'Services' },
+    { id: 'dining-retail', label: 'Dining & Retail', isPage: true },
     { id: 'airport-taxi', label: 'Taxi Services', isPage: true },
     { id: 'hotel-booking', label: 'Hotels', isPage: true },
     { id: 'parking', label: 'Parking' },

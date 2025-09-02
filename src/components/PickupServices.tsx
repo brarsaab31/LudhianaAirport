@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Users, Car, Clock, Phone, MapPin, Calendar, User } from 'lucide-react';
 
 const PickupServices = () => {
   const [selectedService, setSelectedService] = useState('private');
+  const navigate = useNavigate();
 
   const services = {
     private: {
@@ -115,7 +117,15 @@ const PickupServices = () => {
                     </div>
                     <div className="flex items-center justify-between">
                       <span className="text-2xl font-bold text-blue-600">{vehicle.price}</span>
-                      <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors">
+                      <button 
+                        onClick={() => {
+                          navigate('/contact');
+                          setTimeout(() => {
+                            document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                          }, 100);
+                        }}
+                        className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors"
+                      >
                         Select
                       </button>
                     </div>
@@ -137,7 +147,15 @@ const PickupServices = () => {
             </div>
 
             <div className="text-center">
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
+              <button 
+                onClick={() => {
+                  navigate('/contact');
+                  setTimeout(() => {
+                    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                  }, 100);
+                }}
+                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
+              >
                 Book Pick-up Service
               </button>
               <p className="text-gray-600 mt-4">

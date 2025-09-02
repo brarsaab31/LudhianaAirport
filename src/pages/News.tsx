@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import AdBanner from '../components/AdBanner';
@@ -7,6 +8,7 @@ import { Calendar, User, ArrowRight, Tag, Search } from 'lucide-react';
 
 const News = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
+  const navigate = useNavigate();
 
   const ads = [
     {
@@ -185,7 +187,10 @@ const News = () => {
                         <User className="h-4 w-4 text-gray-400" />
                         <span className="text-gray-600 text-sm">{featuredNews.author}</span>
                       </div>
-                      <button className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2 rounded-lg font-semibold transition-colors flex items-center space-x-2">
+                      <button 
+                        onClick={() => navigate('/news/1')}
+                        className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2 rounded-lg font-semibold transition-colors flex items-center space-x-2"
+                      >
                         <span>Read More</span>
                         <ArrowRight className="h-4 w-4" />
                       </button>
@@ -226,7 +231,10 @@ const News = () => {
                         <span>{article.author}</span>
                       </div>
                     </div>
-                    <button className="mt-4 w-full bg-gray-900 hover:bg-indigo-600 text-white py-2 px-4 rounded-lg font-semibold transition-colors">
+                    <button 
+                      onClick={() => navigate(`/news/${article.id}`)}
+                      className="mt-4 w-full bg-gray-900 hover:bg-indigo-600 text-white py-2 px-4 rounded-lg font-semibold transition-colors"
+                    >
                       Read Full Article
                     </button>
                   </div>

@@ -110,7 +110,10 @@ const Hotels = () => {
                     <span className="text-3xl font-bold text-gray-900">{hotel.price}</span>
                     <span className="text-gray-600 ml-1">/night</span>
                   </div>
-                  <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105">
+                  <button 
+                    onClick={() => window.open('https://www.booking.com', '_blank')}
+                    className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105"
+                  >
                     Book Now
                   </button>
                 </div>
@@ -120,7 +123,10 @@ const Hotels = () => {
         </div>
 
         <div className="text-center mt-12">
-          <button className="bg-gray-900 hover:bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105">
+          <button 
+            onClick={() => window.open('https://www.booking.com', '_blank')}
+            className="bg-gray-900 hover:bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105"
+          >
             View All Hotels
           </button>
         </div>
