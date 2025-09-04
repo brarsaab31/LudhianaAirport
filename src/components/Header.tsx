@@ -49,11 +49,11 @@ const Header = () => {
     { id: 'news', label: 'News', isPage: true },
     { id: 'flights', label: 'Flights' },
     { id: 'services', label: 'Services' },
-    { id: 'dining-retail', label: 'Dining & Retail', isPage: true },
-    { id: 'airport-taxi', label: 'Taxi Services', isPage: true },
+    { id: 'dining-retail', label: 'Dining', isPage: true },
+    { id: 'airport-taxi', label: 'Taxi', isPage: true },
     { id: 'hotel-booking', label: 'Hotels', isPage: true },
     { id: 'parking', label: 'Parking' },
-    { id: 'pickup', label: 'Pick-up' },
+    { id: 'pickup', label: 'Pickup' },
     { id: 'contact', label: 'Contact' },
   ];
 
@@ -74,8 +74,8 @@ const Header = () => {
               <Plane className="h-6 w-6 text-white" aria-hidden="true" />
             </div>
             <div>
-              <h1 className="text-xl font-bold text-gray-900">
-                Halwara International Airport
+              <h1 className="text-lg font-bold text-gray-900">
+                Halwara Airport
               </h1>
               <div className="flex items-center space-x-3">
                 <p className="text-sm text-gray-600">
@@ -104,7 +104,7 @@ const Header = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors"
+                className="text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors whitespace-nowrap"
               >
                 {item.label}
               </button>
