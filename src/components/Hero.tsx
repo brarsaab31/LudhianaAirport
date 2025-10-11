@@ -22,7 +22,7 @@ const Hero = () => {
         <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in mt-16 sm:mt-20 lg:mt-24">
           Welcome to 
           <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-white" aria-label="Halwara International Airport">
-            Halwara International Airport
+             Halwara International Airport
           </span>
         </h1>
         
