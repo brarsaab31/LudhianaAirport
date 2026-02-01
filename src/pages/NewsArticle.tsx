@@ -39,6 +39,44 @@ const NewsArticle = () => {
 
   // Sample article data - in a real app, this would come from an API
   const articles = {
+    '7': {
+      title: 'PM Modi Inaugurates Halwara Airport Terminal Today',
+      content: `
+        <p>Prime Minister Narendra Modi today inaugurated the new terminal building at Halwara Airport in Punjab, marking a historic moment for the state's aviation sector. The ceremony was attended by Punjab Chief Minister Bhagwant Mann, Union Civil Aviation Minister, and other dignitaries.</p>
+        
+        <p>The inauguration represents a major step forward in enhancing air connectivity in Punjab and the broader northern region of India. The new terminal is equipped with modern facilities and is designed to handle both domestic and international flights.</p>
+        
+        <h2>Key Features of the New Terminal</h2>
+        <p>The newly inaugurated terminal boasts several state-of-the-art features:</p>
+        <ul>
+          <li>Modern passenger processing systems</li>
+          <li>Advanced security screening equipment</li>
+          <li>Spacious waiting areas with comfortable seating</li>
+          <li>Retail and dining outlets featuring local and international brands</li>
+          <li>Accessibility features for passengers with special needs</li>
+        </ul>
+        
+        <h2>Economic Impact</h2>
+        <p>The Prime Minister highlighted the economic benefits that the airport will bring to Punjab. The facility is expected to boost tourism, facilitate business travel, and create numerous employment opportunities in the region.</p>
+        
+        <p>"This airport will serve as a gateway for Punjab to connect with the world," said PM Modi during the inauguration ceremony. "It will not only improve connectivity but also contribute significantly to the economic development of the state."</p>
+        
+        <h2>Future Plans</h2>
+        <p>The airport is planned to be developed in phases, with the current terminal capable of handling domestic operations. Plans are underway to expand facilities for international flights and cargo operations in subsequent phases.</p>
+        
+        <p>The inauguration marks the beginning of commercial operations at Halwara Airport, with the first scheduled flights expected to commence operations soon. Airlines are already showing interest in operating from this new facility.</p>
+        
+        <h2>Strategic Importance</h2>
+        <p>Located strategically in Punjab, Halwara Airport is expected to serve not just the state but also neighboring regions. The airport's location makes it accessible to major cities in Punjab and provides an alternative to existing airports in the region.</p>
+        
+        <p>The successful inauguration of Halwara Airport represents the government's commitment to improving aviation infrastructure across India and ensuring better connectivity for all regions.</p>
+      `,
+      date: '2025-01-27',
+      author: 'Airport Development Team',
+      category: 'announcements',
+      image: 'https://images.pexels.com/photos/912050/pexels-photo-912050.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      readTime: '4 min read'
+    },
     '1': {
       title: 'Halwara International Airport Construction Reaches Major Milestone',
       content: `

@@ -47,6 +47,16 @@ const News = () => {
 
   const newsArticles = [
     {
+      id: 7,
+      title: 'PM Modi Inaugurates Halwara Airport Terminal Today',
+      excerpt: 'Prime Minister Narendra Modi inaugurated the new terminal building at Halwara Airport today, marking a significant milestone in Punjab\'s aviation infrastructure development.',
+      date: '2025-01-27',
+      author: 'Airport Development Team',
+      category: 'announcements',
+      image: 'https://images.pexels.com/photos/912050/pexels-photo-912050.jpeg?auto=compress&cs=tinysrgb&w=800',
+      featured: true
+    },
+    {
       id: 1,
       title: 'Halwara International Airport Construction Reaches Major Milestone',
       excerpt: 'The construction of the main terminal building has reached 60% completion, marking a significant milestone in the project timeline.',
@@ -54,7 +64,7 @@ const News = () => {
       author: 'Airport Development Team',
       category: 'construction',
       image: 'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=800',
-      featured: true
+      featured: false
     },
     {
       id: 2,
