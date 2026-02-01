@@ -198,7 +198,7 @@ const News = () => {
                         <span className="text-gray-600 text-sm">{featuredNews.author}</span>
                       </div>
                       <button 
-                        onClick={() => navigate('/news/1')}
+                        onClick={() => navigate(`/news/${featuredNews.id}`)}
                         className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2 rounded-lg font-semibold transition-colors flex items-center space-x-2"
                       >
                         <span>Read More</span>
