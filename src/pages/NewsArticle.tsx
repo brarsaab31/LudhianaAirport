@@ -71,7 +71,7 @@ const NewsArticle = () => {
         
         <p>The successful inauguration of Halwara Airport represents the government's commitment to improving aviation infrastructure across India and ensuring better connectivity for all regions.</p>
       `,
-      date: '2025-01-27',
+      date: '2026-02-01',
       author: 'Airport Development Team',
       category: 'announcements',
       image: 'https://images.pexels.com/photos/912050/pexels-photo-912050.jpeg?auto=compress&cs=tinysrgb&w=1200',
