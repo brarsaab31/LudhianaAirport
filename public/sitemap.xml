@@ -28,6 +28,14 @@
     <priority>0.8</priority>
   </url>
   
+  <!-- Blog Page -->
+  <url>
+    <loc>https://chic-tulumba-6b08d3.netlify.app/blog</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
   <!-- Contact Page -->
   <url>
     <loc>https://chic-tulumba-6b08d3.netlify.app/contact</loc>

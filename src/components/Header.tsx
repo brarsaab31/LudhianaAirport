@@ -47,6 +47,7 @@ const Header = () => {
     { id: 'home', label: 'Home' },
     { id: 'about', label: 'About', isPage: true },
     { id: 'news', label: 'News', isPage: true },
+    { id: 'blog', label: 'Blog', isPage: true },
     { id: 'flights', label: 'Flights' },
     { id: 'services', label: 'Services' },
     { id: 'dining-retail', label: 'Dining', isPage: true },

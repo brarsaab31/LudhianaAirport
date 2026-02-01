@@ -20,6 +20,8 @@ import CarRental from './pages/CarRental.tsx';
 import AirportTaxi from './pages/AirportTaxi.tsx';
 import DiningRetail from './pages/DiningRetail.tsx';
 import NewsArticle from './pages/NewsArticle.tsx';
+import Blog from './pages/Blog.tsx';
+import BlogPost from './pages/BlogPost.tsx';
 import './index.css';
 
 createRoot(document.getElementById('root')!).render(
@@ -42,6 +44,8 @@ createRoot(document.getElementById('root')!).render(
           <Route path="/airport-taxi" element={<AirportTaxi />} />
           <Route path="/dining-retail" element={<DiningRetail />} />
           <Route path="/news/:id" element={<NewsArticle />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:id" element={<BlogPost />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-use" element={<TermsOfUse />} />
           <Route path="/disclaimer" element={<Disclaimer />} />
