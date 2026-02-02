@@ -41,8 +41,8 @@ const Hero = () => {
           
           <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
             <Calendar className="h-8 w-8 text-blue-200 mx-auto mb-3" aria-hidden="true" />
-            <h3 className="text-lg font-semibold mb-2">Opening Soon</h3>
-            <p className="text-blue-100">Expected launch in 2025</p>
+            <h3 className="text-lg font-semibold mb-2">Inaugurated on 1st Feb 2026</h3>
+            <p className="text-blue-100">Expected Flights in March 2026</p>
           </div>
           
           <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
