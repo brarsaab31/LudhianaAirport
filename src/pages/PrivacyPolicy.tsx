@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import AdBanner from '../components/AdBanner';
@@ -81,6 +82,14 @@ const PrivacyPolicy = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <Helmet>
+        <title>Privacy Policy - Halwara International Airport</title>
+        <meta name="description" content="Privacy Policy of Halwara International Airport. Learn how we collect, use, and protect your personal information." />
+        <link rel="canonical" href="https://chic-tulumba-6b08d3.netlify.app/privacy-policy" />
+        <meta property="og:title" content="Privacy Policy - Halwara International Airport" />
+        <meta property="og:description" content="Privacy Policy of Halwara International Airport explaining data protection practices." />
+        <meta property="og:url" content="https://chic-tulumba-6b08d3.netlify.app/privacy-policy" />
+      </Helmet>
       <Header />
       
       <div className="pt-20">

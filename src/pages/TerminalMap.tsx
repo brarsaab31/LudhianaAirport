@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import AdBanner from '../components/AdBanner';
@@ -64,6 +65,14 @@ const TerminalMap = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <Helmet>
+        <title>Terminal Map - Halwara International Airport</title>
+        <meta name="description" content="Interactive terminal map of Halwara International Airport. Navigate through different floors and find airport facilities." />
+        <link rel="canonical" href="https://chic-tulumba-6b08d3.netlify.app/terminal-map" />
+        <meta property="og:title" content="Terminal Map - Halwara International Airport" />
+        <meta property="og:description" content="Interactive terminal map of Halwara International Airport. Navigate facilities by floor." />
+        <meta property="og:url" content="https://chic-tulumba-6b08d3.netlify.app/terminal-map" />
+      </Helmet>
       <Header />
       
       <div className="pt-20">

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import AdBanner from '../components/AdBanner';
@@ -72,6 +73,14 @@ const LostAndFound = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <Helmet>
+        <title>Lost & Found - Halwara International Airport</title>
+        <meta name="description" content="Report lost items and claim found belongings at Halwara International Airport. 24/7 Lost and Found services available." />
+        <link rel="canonical" href="https://chic-tulumba-6b08d3.netlify.app/lost-found" />
+        <meta property="og:title" content="Lost & Found - Halwara International Airport" />
+        <meta property="og:description" content="Lost & Found services at Halwara International Airport. Report lost items or claim belongings." />
+        <meta property="og:url" content="https://chic-tulumba-6b08d3.netlify.app/lost-found" />
+      </Helmet>
       <Header />
       
       <div className="pt-20">
