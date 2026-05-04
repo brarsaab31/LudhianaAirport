@@ -52,7 +52,7 @@ const Footer = () => {
               </div>
               <div>
                 <h3 className="text-2xl font-bold">Halwara International Airport</h3>
-                <p className="text-gray-400">Coming Soon</p>
+                <p className="text-gray-400"></p>
               </div>
             </div>
              <div className="flex space-x-4">
