@@ -80,7 +80,7 @@ const Header = () => {
               </h1>
               <div className="flex items-center space-x-3">
                 <p className="text-sm text-gray-600">
-                  Coming Soon
+                
                 </p>
                 <div className="flex space-x-2">
                   {socialLinks.map((social, index) => (
