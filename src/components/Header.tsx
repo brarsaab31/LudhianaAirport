@@ -76,7 +76,7 @@ const Header = () => {
             </div>
             <div>
               <h1 className="text-lg font-bold text-gray-900">
-                Halwara Airport
+                Halwara International Airport
               </h1>
               <div className="flex items-center space-x-3">
                 <p className="text-sm text-gray-600">
