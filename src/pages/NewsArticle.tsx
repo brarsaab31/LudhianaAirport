@@ -39,6 +39,47 @@ const NewsArticle = () => {
 
   // Sample article data - in a real app, this would come from an API
   const articles = {
+    '8': {
+      title: 'First Flight Lands at Ludhiana Halwara Airport',
+      content: `
+        <p>Punjab reached an important milestone in aviation and infrastructure development as the first flight successfully landed at the newly built Halwara Airport near Ludhiana. The long-awaited airport is expected to improve air connectivity in the region and give a major boost to Punjab's industrial and economic growth.</p>
+
+        <p>The first landing marked a historic moment for Ludhiana, one of Punjab's biggest industrial cities. Ravneet Singh Bittu, Union Minister of State for Railways and Food Processing Industries, called it a landmark achievement for Ludhiana and Punjab's economy.</p>
+
+        <h2>Historic Achievement</h2>
+        <p>Sharing the news on social media platform X, Bittu said he travelled on the inaugural flight along with Members of Parliament Vikramjit Sahni and Rajinder Gupta. He described the airport as a dream come true after nearly 30 years of public demand.</p>
+
+        <p>According to Bittu, the airport will strongly support Punjab's industries and create new opportunities for trade, investment, and exports. He also thanked Narendra Modi for supporting the project and called the airport a "visionary gift" for Punjab.</p>
+
+        <h2>Economic Impact for Ludhiana</h2>
+        <p>Ludhiana is known as one of India's major industrial hubs, famous for textiles, hosiery, bicycle manufacturing, machine tools, and engineering products. For many years, industrial groups and business leaders had demanded a modern airport to improve travel and strengthen export activities.</p>
+
+        <p>Until now, many people from Ludhiana had to rely on airports in nearby cities for domestic and international travel. The opening of Halwara Airport is expected to reduce travel time, improve business connectivity, and attract more investment to the state.</p>
+
+        <h2>Opportunities for Industry and Trade</h2>
+        <p>Industry experts believe the airport will help local manufacturers connect more easily with national and international markets. Better air connectivity could also encourage more companies to invest in Punjab, creating jobs and supporting economic growth.</p>
+
+        <p>The airport will also benefit people living in nearby districts by offering faster and easier travel options. Improved connectivity can help tourism, education, healthcare, and business travel across the region.</p>
+
+        <h2>Community Response</h2>
+        <p>The successful landing of the first flight has created excitement among local residents and the business community, many of whom see the airport as a major step toward modernizing Punjab's infrastructure.</p>
+
+        <h2>Broader Transportation Development</h2>
+        <p>The development comes as the government continues to focus on improving transportation networks across India. Along with airport expansion, railway connectivity is also being strengthened.</p>
+
+        <p>Just a day before the Halwara Airport milestone, Ravneet Singh Bittu flagged off the Amrit Bharat Express from Amritsar Junction to New Jalpaiguri. The Amrit Bharat Express is a modern non-air-conditioned train designed to provide affordable and comfortable long-distance travel for ordinary passengers.</p>
+
+        <p>The service is expected to improve rail connectivity between Punjab, Uttar Pradesh, Bihar, and West Bengal, supporting tourism, trade, and regional development while making travel easier for thousands of passengers.</p>
+
+        <h2>Vision for Regional Growth</h2>
+        <p>Together, the launch of Halwara Airport and the new Amrit Bharat Express reflects the government's broader vision of improving transportation and connectivity across northern India. Experts believe these projects could play an important role in strengthening Punjab's economy and supporting long-term growth.</p>
+      `,
+      date: '2026-05-15',
+      author: 'Airport Development Team',
+      category: 'announcements',
+      image: 'https://images.pexels.com/photos/912050/pexels-photo-912050.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      readTime: '6 min read'
+    },
     '7': {
       title: 'PM Modi Inaugurates Halwara Airport Terminal Today',
       content: `

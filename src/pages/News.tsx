@@ -47,6 +47,16 @@ const News = () => {
 
   const newsArticles = [
     {
+      id: 8,
+      title: 'First Flight Lands at Ludhiana Halwara Airport',
+      excerpt: 'Punjab reached an important milestone in aviation and infrastructure development as the first flight successfully landed at the newly built Halwara Airport near Ludhiana. Union Minister Ravneet Singh Bittu travelled on the inaugural flight, calling it a landmark achievement for Ludhiana and Punjab\'s economy.',
+      date: '2026-05-15',
+      author: 'Airport Development Team',
+      category: 'announcements',
+      image: 'https://images.pexels.com/photos/912050/pexels-photo-912050.jpeg?auto=compress&cs=tinysrgb&w=800',
+      featured: true
+    },
+    {
       id: 7,
       title: 'PM Modi Inaugurates Halwara Airport Terminal Today',
       excerpt: 'Prime Minister Narendra Modi inaugurated the new terminal building at Halwara Airport today, marking a significant milestone in Punjab\'s aviation infrastructure development.',
@@ -54,7 +64,7 @@ const News = () => {
       author: 'Airport Development Team',
       category: 'announcements',
       image: 'https://images.pexels.com/photos/912050/pexels-photo-912050.jpeg?auto=compress&cs=tinysrgb&w=800',
-      featured: true
+      featured: false
     },
     {
       id: 1,
