@@ -19,7 +19,7 @@ const TermsOfUse = () => {
       title: 'Business Insurance',
       description: 'Protect your business interests',
       image: 'https://images.pexels.com/photos/1591447/pexels-photo-1591447.jpeg?auto=compress&cs=tinysrgb&w=800',
-      website: 'https://inr.deals/Pz4xu6',
+      website: 'https://clnk.in/AWIr',
       color: 'bg-green-600'
     },
     {
