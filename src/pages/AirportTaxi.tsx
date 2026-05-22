@@ -16,7 +16,7 @@ const AirportTaxi = () => {
       title: 'Taxi Services',
       description: 'Reliable airport transfers',
       image: 'https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=800',
-      website: 'https://www.uber.com',
+      website: 'https://inr.deals/NA60QU',
       color: 'bg-yellow-600'
     },
     {
@@ -24,7 +24,7 @@ const AirportTaxi = () => {
       title: 'Cab Booking',
       description: 'Book your ride in advance',
       image: 'https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&w=800',
-      website: 'https://www.ola.com',
+      website: 'https://inr.deals/NA60QU',
       color: 'bg-green-600'
     },
     {
@@ -32,7 +32,7 @@ const AirportTaxi = () => {
       title: 'Airport Transfers',
       description: 'Professional chauffeur service',
       image: 'https://images.pexels.com/photos/244206/pexels-photo-244206.jpeg?auto=compress&cs=tinysrgb&w=800',
-      website: 'https://www.meru.com',
+      website: 'https://inr.deals/NA60QU',
       color: 'bg-blue-600'
     }
   ];

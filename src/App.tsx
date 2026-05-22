@@ -28,7 +28,7 @@ function App() {
       title: 'Air India',
       description: 'Fly with the national carrier of India',
       image: 'https://images.pexels.com/photos/912050/pexels-photo-912050.jpeg?auto=compress&cs=tinysrgb&w=800',
-      website: 'https://www.airindia.in',
+      website: 'https://go.urtrackinglink.com/aff_c?offer_id=1777&aff_id=168339',
       color: 'bg-red-600'
     },
     {

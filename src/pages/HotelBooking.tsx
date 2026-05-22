@@ -16,7 +16,7 @@ const HotelBooking = () => {
       title: 'Hotel Booking',
       description: 'Best rates guaranteed',
       image: 'https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=800',
-      website: 'https://www.booking.com',
+      website: 'https://inr.deals/Xc3vgz',
       color: 'bg-blue-600'
     },
     {
