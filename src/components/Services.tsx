@@ -94,6 +94,8 @@ const Services = () => {
                       navigate('/contact');
                     } else if (service.title === 'Baggage Services') {
                       navigate('/baggage-claims');
+                    } else {
+                      window.open('https://dummylink.com', '_blank');
                     }
                   }}
                   className="w-full bg-gray-900 hover:bg-blue-600 text-white py-3 px-6 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105"

@@ -254,9 +254,9 @@ const TaxiServices = () => {
               <Phone className="h-5 w-5" />
               <span>Call: +91 161 234 5678</span>
             </a>
-            <button className="bg-blue-800 hover:bg-blue-900 text-white px-8 py-3 rounded-xl font-semibold transition-colors">
+            <a href="https://dummylink.com" target="_blank" rel="noopener noreferrer" className="bg-blue-800 hover:bg-blue-900 text-white px-8 py-3 rounded-xl font-semibold transition-colors">
               Book Online
-            </button>
+            </a>
           </div>
         </div>
       </div>

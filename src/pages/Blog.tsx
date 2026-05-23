@@ -267,9 +267,9 @@ const Blog = () => {
                 placeholder="Enter your email"
                 className="flex-1 px-4 py-3 rounded-l-xl text-gray-900 focus:outline-none focus:ring-2 focus:ring-white"
               />
-              <button className="bg-white text-orange-600 px-6 py-3 rounded-r-xl font-semibold hover:bg-gray-100 transition-colors">
+              <a href="https://dummylink.com" target="_blank" rel="noopener noreferrer" className="bg-white text-orange-600 px-6 py-3 rounded-r-xl font-semibold hover:bg-gray-100 transition-colors flex items-center">
                 Subscribe
-              </button>
+              </a>
             </div>
           </div>
         </div>

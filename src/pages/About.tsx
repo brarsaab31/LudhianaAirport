@@ -201,9 +201,9 @@ const About = () => {
               Be part of Punjab's aviation revolution. Stay updated with our progress and be among 
               the first to experience world-class aviation services.
             </p>
-            <button className="bg-white text-blue-600 px-8 py-3 rounded-xl font-semibold hover:bg-gray-100 transition-colors">
+            <a href="https://dummylink.com" target="_blank" rel="noopener noreferrer" className="bg-white text-blue-600 px-8 py-3 rounded-xl font-semibold hover:bg-gray-100 transition-colors">
               Subscribe for Updates
-            </button>
+            </a>
           </div>
         </div>
 

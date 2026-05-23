@@ -143,9 +143,9 @@ const Parking = () => {
                   </div>
                   
                   <div className="mt-8">
-                    <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-4 px-6 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
+                    <a href="https://dummylink.com" target="_blank" rel="noopener noreferrer" className="block w-full bg-blue-600 hover:bg-blue-700 text-white py-4 px-6 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg text-center">
                       Reserve Parking Spot
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>

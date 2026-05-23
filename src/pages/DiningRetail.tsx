@@ -346,12 +346,12 @@ const DiningRetail = () => {
               Discover all the dining and shopping options available at Halwara International Airport.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-orange-600 px-8 py-3 rounded-xl font-semibold hover:bg-gray-100 transition-colors">
+              <a href="https://dummylink.com" target="_blank" rel="noopener noreferrer" className="bg-white text-orange-600 px-8 py-3 rounded-xl font-semibold hover:bg-gray-100 transition-colors">
                 Download Directory
-              </button>
-              <button className="bg-orange-800 hover:bg-orange-900 text-white px-8 py-3 rounded-xl font-semibold transition-colors">
+              </a>
+              <a href="https://dummylink.com" target="_blank" rel="noopener noreferrer" className="bg-orange-800 hover:bg-orange-900 text-white px-8 py-3 rounded-xl font-semibold transition-colors">
                 Contact Concierge
-              </button>
+              </a>
             </div>
           </div>
         </div>
