@@ -89,7 +89,7 @@ const Services = () => {
                     } else if (service.title === 'Dining & Retail') {
                       navigate('/dining-retail');
                     } else if (service.title === 'Currency Exchange') {
-                      window.open('https://www.xe.com', '_blank');
+                      window.open('https://inr.deals/37u4bL', '_blank');
                     } else if (service.title === 'Customer Support') {
                       navigate('/contact');
                     } else if (service.title === 'Baggage Services') {
