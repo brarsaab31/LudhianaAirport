@@ -93,7 +93,7 @@ const NewsArticle = () => {
           <li>Modern passenger processing systems</li>
           <li>Advanced security screening equipment</li>
           <li>Spacious waiting areas with comfortable seating</li>
-          <li>Retail and dining outlets featuring local and international brands</li>
+          <li>Retail outlets featuring local and international brands</li>
           <li>Accessibility features for passengers with special needs</li>
         </ul>
         

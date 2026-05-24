@@ -48,7 +48,7 @@ const TerminalMap = () => {
       { icon: Coffee, name: 'Premium Lounge', position: { x: 40, y: 40 }, color: 'text-gold-600' },
       { icon: Wifi, name: 'Business Center', position: { x: 60, y: 40 }, color: 'text-blue-600' },
       { icon: Users, name: 'VIP Services', position: { x: 50, y: 60 }, color: 'text-purple-600' },
-      { icon: Coffee, name: 'Executive Dining', position: { x: 30, y: 30 }, color: 'text-orange-600' },
+      { icon: Coffee, name: 'Lounge', position: { x: 30, y: 30 }, color: 'text-orange-600' },
     ]
   };
 

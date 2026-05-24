@@ -50,7 +50,7 @@ const Header = () => {
     { id: 'blog', label: 'Blog', isPage: true },
     { id: 'flights', label: 'Flights' },
     { id: 'services', label: 'Services' },
-    { id: 'dining-retail', label: 'Dining', isPage: true },
+
     { id: 'airport-taxi', label: 'Taxi', isPage: true },
     { id: 'hotel-booking', label: 'Hotels', isPage: true },
     { id: 'parking', label: 'Parking' },

@@ -18,7 +18,7 @@ import BusinessLounge from './pages/BusinessLounge.tsx';
 import HotelBooking from './pages/HotelBooking.tsx';
 import CarRental from './pages/CarRental.tsx';
 import AirportTaxi from './pages/AirportTaxi.tsx';
-import DiningRetail from './pages/DiningRetail.tsx';
+
 import NewsArticle from './pages/NewsArticle.tsx';
 import Blog from './pages/Blog.tsx';
 import BlogPost from './pages/BlogPost.tsx';
@@ -42,7 +42,7 @@ createRoot(document.getElementById('root')!).render(
           <Route path="/hotel-booking" element={<HotelBooking />} />
           <Route path="/car-rental" element={<CarRental />} />
           <Route path="/airport-taxi" element={<AirportTaxi />} />
-          <Route path="/dining-retail" element={<DiningRetail />} />
+
           <Route path="/news/:id" element={<NewsArticle />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:id" element={<BlogPost />} />

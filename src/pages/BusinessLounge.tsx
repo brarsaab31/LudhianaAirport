@@ -40,8 +40,8 @@ const BusinessLounge = () => {
     },
     {
       icon: Utensils,
-      title: 'Premium Dining',
-      description: 'Gourmet meals, snacks, and beverages available all day'
+      title: 'Refreshments',
+      description: 'Complimentary snacks, and beverages available all day'
     },
     {
       icon: Coffee,
@@ -86,7 +86,7 @@ const BusinessLounge = () => {
       duration: 'Per Month',
       features: [
         'Unlimited lounge access',
-        'Premium dining options',
+        'Premium refreshment options',
         'Priority WiFi',
         'Private meeting rooms',
         'Concierge services',
@@ -101,7 +101,7 @@ const BusinessLounge = () => {
       duration: 'Per Year',
       features: [
         'Unlimited access all year',
-        'VIP dining experience',
+        'VIP refreshment experience',
         'Dedicated workspace',
         'Personal concierge',
         'Unlimited guest access',
@@ -134,7 +134,7 @@ const BusinessLounge = () => {
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Premium Lounge Experience</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Escape the hustle and bustle of the terminal in our exclusive business lounge. 
-              Enjoy premium amenities, gourmet dining, and personalized service.
+              Enjoy premium amenities, refreshments, and personalized service.
             </p>
           </div>
 

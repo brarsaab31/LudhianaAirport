@@ -74,7 +74,6 @@ const BlogPost = () => {
         <h2>Terminal Amenities</h2>
         <p>Halwara Airport offers a wide range of amenities to enhance your travel experience:</p>
         <ul>
-          <li><strong>Dining:</strong> From authentic Punjabi cuisine to international options</li>
           <li><strong>Shopping:</strong> Duty-free stores and local handicraft shops</li>
           <li><strong>Business Facilities:</strong> Free WiFi, charging stations, and business lounges</li>
           <li><strong>Family Services:</strong> Play areas, baby changing facilities, and family restrooms</li>
@@ -96,7 +95,7 @@ const BlogPost = () => {
           <li>Keep important documents easily accessible</li>
           <li>Stay hydrated and comfortable during your wait</li>
           <li>Download the airport app for real-time updates</li>
-          <li>Explore local food options to experience Punjab's culinary heritage</li>
+          <li>Explore local shops to experience Punjab's culture</li>
         </ul>
         
         <p>Halwara International Airport is designed with passenger comfort and convenience in mind. With proper planning and knowledge of available services, your journey through the airport will be smooth and enjoyable.</p>

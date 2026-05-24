@@ -100,15 +100,7 @@ const Footer = () => {
                   </Link>
                 </li>
               ))}
-              <li>
-                <Link
-                  to="/dining-retail"
-                  className="text-gray-400 hover:text-white transition-colors duration-300"
-                  onClick={() => window.scrollTo(0, 0)}
-                >
-                  Dining & Retail
-                </Link>
-              </li>
+
             </ul>
           </div>
 

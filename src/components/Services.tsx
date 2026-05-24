@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Car, Wifi, Coffee, ShoppingBag, CreditCard, Phone } from 'lucide-react';
+import { Car, Wifi, ShoppingBag, CreditCard, Phone } from 'lucide-react';
 
 const Services = () => {
   const navigate = useNavigate();
@@ -19,13 +19,6 @@ const Services = () => {
       description: 'High-speed internet connectivity throughout the airport',
       features: ['Unlimited Access', 'High Speed', 'Secure Connection', 'Multiple Zones'],
       color: 'bg-green-500'
-    },
-    {
-      icon: Coffee,
-      title: 'Dining & Retail',
-      description: 'Variety of restaurants, cafes, and retail outlets',
-      features: ['Local Cuisine', 'International Brands', 'Duty-Free Shopping', '24/7 Options'],
-      color: 'bg-orange-500'
     },
     {
       icon: CreditCard,
@@ -86,8 +79,6 @@ const Services = () => {
                   onClick={() => {
                     if (service.title === 'Taxi Services') {
                       document.getElementById('taxi-services')?.scrollIntoView({ behavior: 'smooth' });
-                    } else if (service.title === 'Dining & Retail') {
-                      navigate('/dining-retail');
                     } else if (service.title === 'Currency Exchange') {
                       window.open('https://inr.deals/37u4bL', '_blank');
                     } else if (service.title === 'Customer Support') {
