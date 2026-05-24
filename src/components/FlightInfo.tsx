@@ -40,19 +40,21 @@ const FlightInfo = () => {
         return;
       }
 
-      const response = await fetch(
-        `http://api.aviationstack.com/v1/flights?access_key=${apiKey}&limit=8`
-      );
+      // Fetch departures and arrivals in parallel
+      const [depRes, arrRes] = await Promise.all([
+        fetch(`https://api.aviationstack.com/v1/flights?access_key=${apiKey}&dep_iata=HWR&limit=4`),
+        fetch(`https://api.aviationstack.com/v1/flights?access_key=${apiKey}&arr_iata=HWR&limit=4`)
+      ]);
 
-      if (!response.ok) {
+      if (!depRes.ok || !arrRes.ok) {
         throw new Error('API error');
       }
 
-      const data = await response.json();
-      const allFlights = data.data || [];
+      const depData = await depRes.json();
+      const arrData = await arrRes.json();
 
-      const departuresData = allFlights.filter((f: any) => f.type === 'departure').slice(0, 4);
-      const arrivalsData = allFlights.filter((f: any) => f.type === 'arrival').slice(0, 4);
+      const departuresData = (depData.data || []).slice(0, 4);
+      const arrivalsData = (arrData.data || []).slice(0, 4);
 
       const formattedDepartures = departuresData.map((flight: any) => formatFlight(flight));
       const formattedArrivals = arrivalsData.map((flight: any) => formatFlight(flight));
