@@ -20,7 +20,7 @@ function App() {
       title: 'IndiGo Airlines',
       description: 'Book flights with India\'s favorite airline',
       image: 'https://images.pexels.com/photos/358319/pexels-photo-358319.jpeg?auto=compress&cs=tinysrgb&w=800',
-      website: 'https://www.goindigo.in',
+      website: 'https://inr.deals/8aEnLm',
       color: 'bg-blue-600'
     },
     {
