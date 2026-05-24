@@ -41,7 +41,7 @@ const FlightInfo = () => {
       }
 
       const response = await fetch(
-        `http://api.aviationstack.com/v1/flights?access_key=ea3a35ef1e722c5709921699b40ef831}&limit=8`
+        `http://api.aviationstack.com/v1/flights?access_key=${apiKey}&limit=8`
       );
 
       if (!response.ok) {
