@@ -36,7 +36,7 @@ function App() {
       title: 'SpiceJet',
       description: 'Low-cost flights across India',
       image: 'https://images.pexels.com/photos/2026324/pexels-photo-2026324.jpeg?auto=compress&cs=tinysrgb&w=800',
-      website: 'https://www.spicejet.com',
+      website: 'https://inr.deals/8aEnLm',
       color: 'bg-orange-600'
     }
   ];
