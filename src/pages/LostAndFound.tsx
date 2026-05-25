@@ -12,7 +12,7 @@ const LostAndFound = () => {
       title: 'Travel Insurance',
       description: 'Protect your belongings while traveling',
       image: 'https://images.pexels.com/photos/1591447/pexels-photo-1591447.jpeg?auto=compress&cs=tinysrgb&w=800',
-      website: 'https://clnk.in/AWIr',
+      website: 'https://www.policybazaar.com',
       color: 'bg-blue-600'
     },
     {

@@ -55,7 +55,7 @@ function App() {
       title: 'Ludhiana Hotels',
       description: 'Best accommodation in Ludhiana',
       image: 'https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=800',
-      website: 'https://inr.deals/Xc3vgz',
+      website: 'https://www.booking.com',
       color: 'bg-purple-600'
     },
     {
@@ -74,7 +74,7 @@ function App() {
       title: 'Travel Insurance',
       description: 'Secure your journey with insurance',
       image: 'https://images.pexels.com/photos/1591447/pexels-photo-1591447.jpeg?auto=compress&cs=tinysrgb&w=800',
-      website: 'https://clnk.in/AWIr',
+      website: 'https://www.policybazaar.com',
       color: 'bg-teal-600'
     },
     {

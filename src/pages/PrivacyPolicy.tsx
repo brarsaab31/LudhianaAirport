@@ -12,7 +12,7 @@ const PrivacyPolicy = () => {
       title: 'Secure Travel Insurance',
       description: 'Protect your privacy and journey',
       image: 'https://images.pexels.com/photos/1591447/pexels-photo-1591447.jpeg?auto=compress&cs=tinysrgb&w=800',
-      website: 'https://clnk.in/AWIr',
+      website: 'https://www.policybazaar.com',
       color: 'bg-green-600'
     },
     {
