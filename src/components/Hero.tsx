@@ -3,19 +3,18 @@ import { MapPin, Calendar, Users } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section id="home" className="relative py-32 flex items-center justify-center overflow-hidden" style={{ minHeight: '120vh' }} role="banner">
-      <div
-        className="absolute inset-0"
-        style={{
-          backgroundImage: `url('/ChatGPT_Image_May_30,_2026,_08_25_44_AM.png')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center'
-        }}
-        role="img"
-        aria-label="Halwara International Airport modern terminal with golden lighting"
-      >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/10 to-black/50"></div>
-      </div>
+    <section 
+      id="home" 
+      className="relative py-32 flex items-center justify-center overflow-hidden min-h-[120vh]" 
+      role="banner"
+      style={{
+        backgroundImage: `url('/ChatGPT_Image_May_30,_2026,_08_25_44_AM.png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+      }}
+    >
+      {/* This overlay ensures the text remains readable over the image */}
+      <div className="absolute inset-0 bg-black/50" />
       
       <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
         <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in mt-16 sm:mt-20 lg:mt-24 drop-shadow-lg">
@@ -33,19 +32,20 @@ const Hero = () => {
         </p>
         
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12 max-w-3xl mx-auto">
-          <div className="bg-black/30 backdrop-blur-md rounded-lg p-6 border border-white/30 hover:bg-black/40 transition-all">
+          {/* Card backgrounds are now transparent to show the hero image underneath */}
+          <div className="bg-white/10 backdrop-blur-md rounded-lg p-6 border border-white/20 hover:bg-white/20 transition-all">
             <MapPin className="h-8 w-8 text-amber-300 mx-auto mb-3" aria-hidden="true" />
             <h3 className="text-lg font-semibold mb-2">Strategic Location</h3>
             <p className="text-gray-100">Prime location in the heart of Punjab</p>
           </div>
 
-          <div className="bg-black/30 backdrop-blur-md rounded-lg p-6 border border-white/30 hover:bg-black/40 transition-all">
+          <div className="bg-white/10 backdrop-blur-md rounded-lg p-6 border border-white/20 hover:bg-white/20 transition-all">
             <Calendar className="h-8 w-8 text-amber-300 mx-auto mb-3" aria-hidden="true" />
             <h3 className="text-lg font-semibold mb-2">Inaugurated on 1st Feb 2026</h3>
             <p className="text-gray-100">Expected Flights in March 2026</p>
           </div>
 
-          <div className="bg-black/30 backdrop-blur-md rounded-lg p-6 border border-white/30 hover:bg-black/40 transition-all">
+          <div className="bg-white/10 backdrop-blur-md rounded-lg p-6 border border-white/20 hover:bg-white/20 transition-all">
             <Users className="h-8 w-8 text-amber-300 mx-auto mb-3" aria-hidden="true" />
             <h3 className="text-lg font-semibold mb-2">World-Class Service</h3>
             <p className="text-gray-100">Modern amenities and facilities</p>
