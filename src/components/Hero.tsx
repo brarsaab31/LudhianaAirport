@@ -5,101 +5,85 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative overflow-hidden"
+      style={{
+        backgroundImage:
+          "linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.35)), url('/ChatGPT_Image_May_30,_2026,_08_25_44_AM.png')",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+      }}
       role="banner"
     >
-      {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage:
-            "url('/ChatGPT_Image_May_30,_2026,_08_25_44_AM.png')",
-        }}
-        role="img"
-        aria-label="Halwara International Airport modern terminal with golden lighting"
-      >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/10 to-black/40"></div>
-      </div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
+        <div className="text-center text-white">
+          <h1 className="text-5xl sm:text-6xl lg:text-8xl font-bold mb-6 drop-shadow-lg">
+            Welcome to
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-yellow-100 via-yellow-200 to-yellow-50">
+              Halwara International Airport
+            </span>
+          </h1>
 
-      {/* Content */}
-      <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto py-20">
-        <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold mb-6 drop-shadow-lg">
-          Welcome to
-          <span className="block text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-white to-yellow-100">
-            Halwara International Airport
-          </span>
-        </h1>
+          <p className="text-xl sm:text-2xl max-w-4xl mx-auto leading-relaxed drop-shadow-lg">
+            Punjab's newest international gateway, connecting Ludhiana to the
+            world with modern facilities and exceptional service.
+          </p>
 
-        <p className="text-xl sm:text-2xl mb-8 text-gray-100 max-w-3xl mx-auto leading-relaxed drop-shadow">
-          Punjab's newest international gateway, connecting Ludhiana to the
-          world with modern facilities and exceptional service.
-        </p>
+          <p className="mt-6 text-lg italic text-white/90">
+            "A helpful guide sharing info and updates about Halwara
+            International Airport for everyone's ease."
+          </p>
 
-        <p className="text-lg italic text-gray-200 mb-12">
-          "A helpful guide sharing info and updates about Halwara International
-          Airport for everyone's ease."
-        </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 max-w-5xl mx-auto">
+            <div className="bg-black/35 backdrop-blur-md rounded-xl p-8 border border-white/20">
+              <MapPin className="h-10 w-10 text-yellow-400 mx-auto mb-4" />
+              <h3 className="text-2xl font-semibold mb-3">
+                Strategic Location
+              </h3>
+              <p className="text-gray-100">
+                Prime location in the heart of Punjab
+              </p>
+            </div>
 
-        {/* Feature Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12 max-w-4xl mx-auto">
-          <div className="bg-black/30 backdrop-blur-md rounded-lg p-6 border border-white/20 hover:bg-black/40 transition-all">
-            <MapPin
-              className="h-8 w-8 text-amber-300 mx-auto mb-3"
-              aria-hidden="true"
-            />
-            <h3 className="text-lg font-semibold mb-2">
-              Strategic Location
-            </h3>
-            <p className="text-gray-100">
-              Prime location in the heart of Punjab
-            </p>
+            <div className="bg-black/35 backdrop-blur-md rounded-xl p-8 border border-white/20">
+              <Calendar className="h-10 w-10 text-yellow-400 mx-auto mb-4" />
+              <h3 className="text-2xl font-semibold mb-3">
+                Inaugurated on 1st Feb 2026
+              </h3>
+              <p className="text-gray-100">
+                Expected Flights in March 2026
+              </p>
+            </div>
+
+            <div className="bg-black/35 backdrop-blur-md rounded-xl p-8 border border-white/20">
+              <Users className="h-10 w-10 text-yellow-400 mx-auto mb-4" />
+              <h3 className="text-2xl font-semibold mb-3">
+                World-Class Service
+              </h3>
+              <p className="text-gray-100">
+                Modern amenities and facilities
+              </p>
+            </div>
           </div>
 
-          <div className="bg-black/30 backdrop-blur-md rounded-lg p-6 border border-white/20 hover:bg-black/40 transition-all">
-            <Calendar
-              className="h-8 w-8 text-amber-300 mx-auto mb-3"
-              aria-hidden="true"
-            />
-            <h3 className="text-lg font-semibold mb-2">
-              Inaugurated on 1st Feb 2026
-            </h3>
-            <p className="text-gray-100">
-              Expected Flights in March 2026
-            </p>
-          </div>
-
-          <div className="bg-black/30 backdrop-blur-md rounded-lg p-6 border border-white/20 hover:bg-black/40 transition-all">
-            <Users
-              className="h-8 w-8 text-amber-300 mx-auto mb-3"
-              aria-hidden="true"
-            />
-            <h3 className="text-lg font-semibold mb-2">
-              World-Class Service
-            </h3>
-            <p className="text-gray-100">
-              Modern amenities and facilities
-            </p>
+          <div className="mt-16">
+            <button
+              onClick={() =>
+                document
+                  .getElementById('flights')
+                  ?.scrollIntoView({ behavior: 'smooth' })
+              }
+              className="bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white px-10 py-4 rounded-lg text-xl font-semibold transition-all duration-300 hover:scale-105 shadow-2xl"
+            >
+              Explore Services
+            </button>
           </div>
         </div>
-
-        {/* Button */}
-        <button
-          onClick={() =>
-            document
-              .getElementById('flights')
-              ?.scrollIntoView({ behavior: 'smooth' })
-          }
-          className="bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl"
-          aria-label="Explore airport services and facilities"
-        >
-          Explore Services
-        </button>
       </div>
 
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce z-10">
-        <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-white/70 rounded-full mt-2 animate-pulse"></div>
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 animate-bounce">
+        <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
+          <div className="w-1 h-3 bg-white rounded-full mt-2"></div>
         </div>
       </div>
     </section>
