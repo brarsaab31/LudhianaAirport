@@ -8,8 +8,8 @@ const Hero = () => {
       className="relative overflow-hidden"
       style={{
         backgroundImage:
-          "linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.35)), url('/ChatGPT_Image_May_30,_2026,_08_25_44_AM.png')",
-        backgroundSize: '100% 100%',
+          "linear-gradient(rgba(8, 25, 45, 0.48), rgba(8, 25, 45, 0.62)), url('https://images.pexels.com/photos/12955787/pexels-photo-12955787.jpeg?auto=compress&cs=tinysrgb&h=650&w=940')",
+        backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
       }}
