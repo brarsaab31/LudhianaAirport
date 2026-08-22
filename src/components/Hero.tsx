@@ -9,7 +9,7 @@ const Hero = () => {
       style={{
         backgroundImage:
           "linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.35)), url('/ChatGPT_Image_May_30,_2026,_08_25_44_AM.png')",
-        backgroundSize: 'cover',
+        backgroundSize: '100% 100%',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
       }}
