@@ -1,7 +1,10 @@
 import React from 'react';
-import { Car, Wifi, Coffee, ShoppingBag, CreditCard, Phone } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+import { Car, Wifi, ShoppingBag, CreditCard, Phone } from 'lucide-react';
 
 const Services = () => {
+  const navigate = useNavigate();
+
   const services = [
     {
       icon: Car,
@@ -16,13 +19,6 @@ const Services = () => {
       description: 'High-speed internet connectivity throughout the airport',
       features: ['Unlimited Access', 'High Speed', 'Secure Connection', 'Multiple Zones'],
       color: 'bg-green-500'
-    },
-    {
-      icon: Coffee,
-      title: 'Dining & Retail',
-      description: 'Variety of restaurants, cafes, and retail outlets',
-      features: ['Local Cuisine', 'International Brands', 'Duty-Free Shopping', '24/7 Options'],
-      color: 'bg-orange-500'
     },
     {
       icon: CreditCard,
@@ -48,12 +44,12 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-white">
+    <section id="services" className="py-20 bg-white" aria-labelledby="services-heading">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Airport Services</h2>
+          <h2 id="services-heading" className="text-4xl font-bold text-gray-900 mb-4">Airport Services</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Comprehensive services designed to make your travel experience seamless and comfortable
+            Comprehensive services designed to make your travel experience seamless and comfortable. 
           </p>
         </div>
 
@@ -79,7 +75,22 @@ const Services = () => {
               </div>
               
               <div className="px-8 pb-8">
-                <button className="w-full bg-gray-900 hover:bg-blue-600 text-white py-3 px-6 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105">
+                <button 
+                  onClick={() => {
+                    if (service.title === 'Taxi Services') {
+                      document.getElementById('taxi-services')?.scrollIntoView({ behavior: 'smooth' });
+                    } else if (service.title === 'Currency Exchange') {
+                      window.open('https://inr.deals/37u4bL', '_blank');
+                    } else if (service.title === 'Customer Support') {
+                      navigate('/contact');
+                    } else if (service.title === 'Baggage Services') {
+                      navigate('/baggage-claims');
+                    } else {
+                      window.open('https://dummylink.com', '_blank');
+                    }
+                  }}
+                  className="w-full bg-gray-900 hover:bg-blue-600 text-white py-3 px-6 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105"
+                >
                   Learn More
                 </button>
               </div>

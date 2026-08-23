@@ -67,10 +67,10 @@ const Parking = () => {
   ];
 
   return (
-    <section id="parking" className="py-20 bg-white">
+    <section id="parking" className="py-20 bg-white" aria-labelledby="parking-heading">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Parking Services</h2>
+          <h2 id="parking-heading" className="text-4xl font-bold text-gray-900 mb-4">Parking Services</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Secure, convenient parking solutions for all your travel needs
           </p>
@@ -143,9 +143,9 @@ const Parking = () => {
                   </div>
                   
                   <div className="mt-8">
-                    <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-4 px-6 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
+                    <a href="https://dummylink.com" target="_blank" rel="noopener noreferrer" className="block w-full bg-blue-600 hover:bg-blue-700 text-white py-4 px-6 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg text-center">
                       Reserve Parking Spot
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>

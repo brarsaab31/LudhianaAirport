@@ -51,12 +51,12 @@ const Hotels = () => {
   ];
 
   return (
-    <section id="hotels" className="py-20 bg-gray-50">
+    <section id="hotels" className="py-20 bg-gray-50" aria-labelledby="hotels-heading">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Nearby Hotels</h2>
+          <h2 id="hotels-heading" className="text-4xl font-bold text-gray-900 mb-4">Best Hotels In Ludhiana</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Comfortable accommodations within easy reach of the airport
+            Comfortable accommodations within easy reach of Halwara International Airport. 
           </p>
         </div>
 
@@ -66,7 +66,7 @@ const Hotels = () => {
               <div className="relative">
                 <img
                   src={hotel.image}
-                  alt={hotel.name}
+                  alt={`${hotel.name} - Luxury hotel near Halwara International Airport with modern amenities and comfortable rooms`}
                   className="w-full h-56 object-cover"
                 />
                 <div className="absolute top-4 right-4 bg-white px-3 py-1 rounded-full shadow-md">
@@ -110,7 +110,10 @@ const Hotels = () => {
                     <span className="text-3xl font-bold text-gray-900">{hotel.price}</span>
                     <span className="text-gray-600 ml-1">/night</span>
                   </div>
-                  <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105">
+                  <button 
+                    onClick={() => window.open('https://www.booking.com', '_blank')}
+                    className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105"
+                  >
                     Book Now
                   </button>
                 </div>
@@ -120,7 +123,10 @@ const Hotels = () => {
         </div>
 
         <div className="text-center mt-12">
-          <button className="bg-gray-900 hover:bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105">
+          <button 
+            onClick={() => window.open('https://www.booking.com', '_blank')}
+            className="bg-gray-900 hover:bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105"
+          >
             View All Hotels
           </button>
         </div>

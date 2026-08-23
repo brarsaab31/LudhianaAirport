@@ -1,0 +1,5 @@
+# Force HTTPS
+http://chic-tulumba-6b08d3.netlify.app/* https://chic-tulumba-6b08d3.netlify.app/:splat 301!
+
+# SPA fallback
+/*    /index.html   200
